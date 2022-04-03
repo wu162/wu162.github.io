@@ -6,12 +6,15 @@
     <meta charset="utf-8">
     <meta name="keywords" content="地图制作器更新日志, 日冕地图制作器">
     <meta name="description" content="地图制作器更新日志
-更新时间：2022年3月27日
-为随机制作和精准制作的地图增加额外特效
-修复无限电力不生效的问题
-修复 lua制作和精准制作的得到的贴图不显示的问题
-修复制作的地图无法显示中立建筑的问题（例如油井，医院等）
-lua制作增">
+更新时间：2022年4月3日（群内更新）
+
+为lua制作增加大量的脚本条件和脚本动作，并且可以配置更多脚本属性
+
+脚本条件列表参考这里
+脚本动作列表参考这里
+使用方法可参考如下示例
+script.begin()
+.con">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -329,6 +332,58 @@ lua制作增">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>地图制作器更新日志</p>
+<p>更新时间：2022年4月3日（群内更新）</p>
+<ul>
+<li>为lua制作增加大量的脚本条件和脚本动作，并且可以配置更多脚本属性</li>
+</ul>
+<p>脚本条件列表参考这里</p>
+<p>脚本动作列表参考这里</p>
+<p>使用方法可参考如下示例</p>
+<pre class=" language-lua"><code class="language-lua">script<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">onTrue</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">ed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">-- 间隔10秒重复执行</span>
+script<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token keyword">repeat</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">interval</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">onTrue</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">ed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">-- OR之间的condition为AND连接</span>
+script<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"NAMED_DESTROYED"</span><span class="token punctuation">,</span> <span class="token string">"yourmcv"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">OR</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"NAMED_DESTROYED"</span><span class="token punctuation">,</span> <span class="token string">"mymcv"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">onTrue</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">ed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">-- false动作</span>
+script<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">onTrue</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">onTrue</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">onFalse</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_2"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">ed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">-- 设置是否启用，是否是子脚本，脚本名字</span>
+script<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">setActive</span><span class="token punctuation">(</span><span class="token keyword">false</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">setSubroutine</span><span class="token punctuation">(</span><span class="token keyword">false</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">"myScript"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">condition</span><span class="token punctuation">(</span><span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">onTrue</span><span class="token punctuation">(</span><span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">ed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<ul>
+<li>修复精准制作 读取长宽不等的图片 出现的bug</li>
+<li>精准制作加入alpha值<pre class=" language-text"><code class="language-text">alpha值为255，则高度等于b分量
+alpha为0，则高度等于 255+b分量
+</code></pre>
+</li>
+</ul>
 <h2 id="更新时间：2022年3月27日"><a href="#更新时间：2022年3月27日" class="headerlink" title="更新时间：2022年3月27日"></a>更新时间：2022年3月27日</h2><ul>
 <li>为随机制作和精准制作的地图增加额外特效</li>
 <li>修复无限电力不生效的问题</li>

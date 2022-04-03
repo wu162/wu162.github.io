@@ -1,0 +1,1123 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="脚本动作列表, 日冕地图制作器">
+    <meta name="description" content="命令字: SET_FLAG地编条目: Scripting&amp;#x2F;Flags&amp;#x2F;Set flag to value.地编编号: 1脚本描述:参数: et ~ to参数类型: String, Int32示例: (TESTFLAG -">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>脚本动作列表 | 日冕地图制作器</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">日冕地图制作器</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">日冕地图制作器</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">脚本动作列表</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>命令字: SET_FLAG<br>地编条目: Scripting&#x2F;Flags&#x2F;Set flag to value.<br>地编编号: 1<br>脚本描述:<br>参数: et ~ to<br>参数类型: String, Int32<br>示例: (TESTFLAG - Player 2 Owns Structures, 1)</p>
+<p>命令字: SET_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set counter to a value.<br>地编编号: 2<br>脚本描述:<br>参数: et ~ to<br>参数类型: String, Int32<br>示例: (Japan05 - COUNTER - Target P1, -1)</p>
+<p>命令字: SET_COUNTER_TO_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set counter to another counter.<br>地编编号: 276<br>脚本描述:<br>参数: et ~ to<br>参数类型: String, String<br>示例: (c_transports_left, c_transports_spawned)</p>
+<p>命令字: SET_RANDOM_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set a random counter.<br>地编编号: 275<br>脚本描述:<br>参数: et ~ randomly between ~ and ~.<br>参数类型: String, Int32, Int32<br>示例: (COUTNER - Trigger Loss Video, 1, 2)</p>
+<p>命令字: VICTORY_SCREEN<br>地编条目: Win &amp; Loss&#x2F; Show Victory Screen<br>地编编号: 386<br>脚本描述:<br>参数: hows the victory screen, but does not behave as a victory.<br>参数类型:<br>示例: ()</p>
+<p>命令字: NO_OP<br>地编条目: Scripting&#x2F;Debug&#x2F;Null operation.<br>地编编号: 5<br>脚本描述:<br>参数: ull operation. (Does nothing.)<br>参数类型:<br>示例: ()</p>
+<p>命令字: SET_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Frame countdown timer – set.<br>地编编号: 6<br>脚本描述:<br>参数: et ~ to expire in ~ frames.<br>参数类型: String, Int32<br>示例: (TH - AMM02 - Play, 4)</p>
+<p>命令字: SET_RANDOM_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Frame countdown timer – set random.<br>地编编号: 121<br>脚本描述:<br>参数: et ~ to expire between ~ and ~ frames.<br>参数类型: String, Int32, Int32<br>示例: (r_random, 1, 25)</p>
+<p>命令字: STOP_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Timer – stop.<br>地编编号: 123<br>脚本描述:<br>参数: top<br>参数类型: String<br>示例: (Timer-TimeToProtectRescueBoat)</p>
+<p>命令字: RESTART_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Timer – restart stopped.<br>地编编号: 124<br>脚本描述:<br>参数: estart<br>参数类型: String<br>示例: (t_relay_stations_timer)</p>
+<p>命令字: PLAY_SOUND_EFFECT<br>地编条目: Media&#x2F;Audio&#x2F;Sound Effect&#x2F;Play 2D sound effect.<br>地编编号: 7<br>脚本描述:<br>参数: lay ~ as though it was a 2D sound (NOT RECOMMENDED for 3D sounds).<br>参数类型: String<br>示例: (MI09_ImperialSoldier01)</p>
+<p>命令字: ENABLE_SCRIPT<br>地编条目: Scripting&#x2F;Enable Script.<br>地编编号: 8<br>脚本描述:<br>参数: nable ~.<br>参数类型: String<br>示例: (TH - Controller)</p>
+<p>命令字: DISABLE_SCRIPT<br>地编条目: Scripting&#x2F;Disable script.<br>地编编号: 9<br>脚本描述:<br>参数: isable ~.<br>参数类型: String<br>示例: (Player_2&#x2F;XL1)</p>
+<p>命令字: CALL_SUBROUTINE<br>地编条目: Scripting&#x2F;Run subroutine script.<br>地编编号: 10<br>脚本描述:<br>参数: un ~.<br>参数类型: String<br>示例: (Hint 02 - Vindicator Audio Subroutine)</p>
+<p>命令字: PLAY_SOUND_EFFECT_AT<br>地编条目: Media&#x2F;Audio&#x2F;Sound Effect&#x2F;Play sound effect at waypoint.<br>地编编号: 11<br>脚本描述:<br>参数: lay ~ at ~.<br>参数类型: String, String<br>示例: (MA03_AlliedMCV01, Waypoint 18)</p>
+<p>命令字: DAMAGE_MEMBERS_OF_TEAM<br>地编条目: Team&#x2F;Damage or Remove&#x2F;Damage the members of Team.<br>地编编号: 12<br>脚本描述:<br>参数: amage <del>, amount&#x3D;</del> (-1&#x3D;&#x3D;kill).<br>参数类型: String, Double<br>示例: (PlyrCivilian&#x2F;TEAM_Civ - Endgame - Buildings, 1800)</p>
+<p>命令字: TEAM_SET_HEALTH<br>地编条目: Team&#x2F;Damage or Remove&#x2F;Set the health of the team members (in percentage).<br>地编编号: 318<br>脚本描述:<br>参数: et health of ~ to percentage (0.0 - 100.0)<br>参数类型: String, Double<br>示例: (Player_1&#x2F;teamPlayer_1, 50)</p>
+<p>命令字: MOVE_TEAM_TO<br>地编条目: Team&#x2F;Move&#x2F;Set team to move to a location.<br>地编编号: 13<br>脚本描述:<br>参数: ove ~ to ~.<br>参数类型: String, String<br>示例: (Player_1&#x2F;BINGDONG, YD18.5)</p>
+<p>命令字: ATTACK_MOVE_TEAM_TO<br>地编条目: Team&#x2F;Attack&#x2F;Set team to attack-move to a location.<br>地编编号: 413<br>脚本描述:<br>参数: ttackMove ~ to ~.<br>参数类型: String, String<br>示例: (MJ HJ1, MJ HJ1.5)</p>
+<p>命令字: ATTACK_MOVE_TEAM_TO_NAMED_OBJECT<br>地编条目: Team&#x2F;Attack&#x2F;Attack move a team to a named object.<br>地编编号: 425<br>脚本描述:<br>参数: ttackMove ~ to ~.<br>参数类型: String, String<br>示例: (Japan04_NavalAttack01, Unit-Soviet05-RescueBoat)</p>
+<p>命令字: TEAM_FOLLOW_WAYPOINTS<br>地编条目: Team&#x2F;Move&#x2F;Set team to follow a waypoint path.<br>地编编号: 32<br>脚本描述:<br>参数: ave ~ follow ~ , as a team is ~ , in formation is<br>参数类型: String, String, Int32, Int32<br>示例: (Soviet_1&#x2F;TEAM - Intro Bears, WPP - Soviet Intro Bear Path, 1, 1)</p>
+<p>命令字: TEAM_ATTACK_MOVE_FOLLOW_WAYPOINTS<br>地编条目: Team&#x2F;Attack&#x2F;Set team to attack-move along a waypoint path.<br>地编编号: 414<br>脚本描述:<br>参数: ave ~ AttackMove along ~ , as a team is ~ , in formation is<br>参数类型: String, String, Int32, Int32<br>示例: (Player_1&#x2F;QJBD, RW1, 1, 1)</p>
+<p>命令字: TEAM_FOLLOW_WAYPOINTS_EXACT<br>地编条目: Team&#x2F;Move&#x2F;Set to EXACTLY follow a waypoint path.<br>地编编号: 213<br>脚本描述:<br>参数: ave ~ EXACTLY follow ~ , as a team is<br>参数类型: String, String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, WPP - Japan01 - Scout the Player, 1)</p>
+<p>命令字: MOVE_NAMED_UNIT_TO<br>地编条目: Object Type&#x2F;Move&#x2F;Named object move to a location.<br>地编编号: 33<br>脚本描述:<br>参数: ove ~ to ~.<br>参数类型: String, String<br>示例: (MJ JIAN DIE, DENG LU1)</p>
+<p>命令字: ATTACK_MOVE_NAMED_UNIT_TO<br>地编条目: Object Type&#x2F;Attack&#x2F;Named object attack-move to a location.<br>地编编号: 415<br>脚本描述:<br>参数: ttackMove ~ to ~.<br>参数类型: String, String<br>示例: (UNIT - Wave 03 - Stingray 01, WP - Wave 03 - Bullfrog 02 Shoot Point)</p>
+<p>命令字: CREATE_REINFORCEMENT_TEAM<br>地编条目: Team&#x2F;Spawn, Build, or Merge&#x2F;Spawn a reinforcement team at location.<br>地编编号: 30<br>脚本描述:<br>参数: pawn an instance of ~ at ~.<br>参数类型: String, String<br>示例: (MJ HJ1, MJ HJ1)</p>
+<p>命令字: CREATE_REINFORCEMENT_TEAM_AT_UNIT_POSITION<br>地编条目: Team&#x2F;Spawn, Build, or Merge&#x2F;Spawn a reinforcement team at named object’s position.<br>地编编号: 337<br>脚本描述:<br>参数: pawn an instance of ~ at ~.<br>参数类型: String, String<br>示例: (Hostile01&#x2F;Civ_Garrison_A, o_civbuilding_a)</p>
+<p>命令字: UNIT_SET_TEAM<br>地编条目: Object Type&#x2F;Allegiance&#x2F;Force named object to join team.<br>地编编号: 375<br>脚本描述:<br>参数: ~ will join ~.<br>参数类型: String, String<br>示例: (o_castle, Soviet01&#x2F;teamSoviet01)</p>
+<p>命令字: GIVE_PLAYER_UPGRADE<br>地编条目: Player&#x2F;Upgrades and Sciences&#x2F;Give Player an Upgrade.<br>地编编号: 314<br>脚本描述:<br>参数: ive ~ this upgrade:<br>参数类型: String, String<br>示例: (Player_2, upgrade_alliedtech2)</p>
+<p>命令字: MOVE_CAMERA_TO<br>地编条目: Cinematics&#x2F;Camera&#x2F;Move the camera to a location.<br>地编编号: 14<br>脚本描述:<br>参数: ove camera to ~ in ~ seconds, camera shutter ~ seconds, ease-in ~ seconds, ease-out ~ seconds.<br>参数类型: String, Double, Double, Double, Double<br>示例: (WP - Reveal - Baseball Stadium 1, 3, 3, 1, 1)</p>
+<p>命令字: ZOOM_CAMERA<br>地编条目: Cinematics&#x2F;Camera&#x2F;Change the camera zoom.<br>地编编号: 103<br>脚本描述:<br>参数: hange camera zoom to ~ in ~ seconds, ease-in ~ seconds, ease-out ~ seconds.<br>参数类型: Double, Double, Double, Double<br>示例: (0.85, 2, 1, 1)</p>
+<p>命令字: CAMERA_FOLLOW_NAMED<br>地编条目: Cinematics&#x2F;Camera&#x2F;Follow a specific unit.<br>地编编号: 105<br>脚本描述:<br>参数: ave the camera follow ~. Snap camera to object is ~. Camera will be ~ higher than the unit.<br>参数类型: String, Int32, Double<br>示例: (UNIT - Tanya, 1, 350)</p>
+<p>命令字: CAMERA_STOP_FOLLOW<br>地编条目: Cinematics&#x2F;Camera&#x2F;Stop following any units.<br>地编编号: 113<br>脚本描述:<br>参数: top following any units.<br>参数类型:<br>示例: ()</p>
+<p>命令字: SETUP_CAMERA<br>地编条目: Cinematics&#x2F;Camera&#x2F;Set up the camera.<br>地编编号: 100<br>脚本描述:<br>参数: osition camera at ~, zoom &#x3D; ~(0.0 to 1.0), pitch &#x3D; ~(1.0&#x3D;&#x3D;default), looking towards ~.<br>参数类型: String, Double, Double, String<br>示例: (YD1.1, 0.6, 0.7, YD1.3)</p>
+<p>命令字: INCREMENT_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Increment counter.<br>地编编号: 15<br>脚本描述:<br>参数: dd ~ to<br>参数类型: Int32, String<br>示例: (1, COUNTER - Wave 02 - Infantry Team Destroyed)</p>
+<p>命令字: DECREMENT_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Decrement counter.<br>地编编号: 16<br>脚本描述:<br>参数: ubtract ~ from<br>参数类型: Int32, String<br>示例: (1, KT)</p>
+<p>命令字: ROTATE_CAMERA<br>地编条目: Cinematics&#x2F;Camera&#x2F;Rotate around the current viewpoint.<br>地编编号: 18<br>脚本描述:<br>参数: otate ~ times, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.<br>参数类型: Double, Double, Double, Double<br>示例: (5, 240, 2, 2)</p>
+<p>命令字: RESET_CAMERA<br>地编条目: Cinematics&#x2F;Camera&#x2F;Reset to the default view.<br>地编编号: 19<br>脚本描述:<br>参数: eset to ~, taking ~ seconds, ease-in ~ seconds, ease-out ~ seconds.<br>参数类型: String, Double, Double, Double<br>示例: (WP - Player_1_Base, 3, 1, 1)</p>
+<p>命令字: SET_MILLISECOND_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Seconds countdown timer – set.<br>地编编号: 21<br>脚本描述:<br>参数: et ~ to expire in ~ seconds.<br>参数类型: String, Double<br>示例: (KT, 100)</p>
+<p>命令字: SET_RANDOM_MSEC_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Seconds countdown timer – set random.<br>地编编号: 122<br>脚本描述:<br>参数: et ~ to expire between ~ and ~ seconds.<br>参数类型: String, Double, Double<br>示例: (TIMER - Mig Spawn A, 1, 4)</p>
+<p>命令字: SUB_FROM_MSEC_TIMER<br>地编条目: Scripting&#x2F;Timer&#x2F;Seconds countdown timer – subtract seconds.<br>地编编号: 126<br>脚本描述:<br>参数: ubtract ~ seconds from ~ .<br>参数类型: Double, String<br>示例: (60, Timer-TimeToProtectRescueBoat)</p>
+<p>命令字: SUSPEND_BACKGROUND_SOUNDS<br>地编条目: Media&#x2F;Audio&#x2F;All Sounds&#x2F;Suspend all sounds.<br>地编编号: 24<br>脚本描述:<br>参数: uspend background sounds.<br>参数类型:<br>示例: ()</p>
+<p>命令字: RESUME_BACKGROUND_SOUNDS<br>地编条目: Media&#x2F;Audio&#x2F;All Sounds&#x2F;Resume all sounds.<br>地编编号: 25<br>脚本描述:<br>参数: esume background sounds.<br>参数类型:<br>示例: ()</p>
+<p>命令字: TEAM_ATTACK_TEAM<br>地编条目: Team&#x2F;Attack&#x2F;Set team to attack another team.<br>地编编号: 29<br>脚本描述:<br>参数: ~ begin attack on<br>参数类型: String, String<br>示例: (Player_2&#x2F;VX G1.1, Player_1&#x2F;teamPlayer_1)</p>
+<p>命令字: NAMED_ATTACK_NAMED<br>地编条目: Object Type&#x2F;Attack&#x2F;Set unit to attack another unit.<br>地编编号: 34<br>脚本描述:<br>参数: ~ begin attack on<br>参数类型: String, String<br>示例: (UNIT - Bear Fodder 02, UNIT - Peacekeeper 03)</p>
+<p>命令字: CREATE_NAMED_ON_TEAM_AT_WAYPOINT<br>地编条目: Object Type&#x2F;Spawn&#x2F;Spawn a named object on a team at a waypoint.<br>地编编号: 35<br>脚本描述:<br>参数: pawn ~ of type ~ on ~ at<br>参数类型: String, String, String, String<br>示例: (UNIT - Chrono Effect 1, fxprop_chronoflash, PlyrCivilian&#x2F;teamPlyrCivilian, WP - P1 - Reinforcements Spawn)</p>
+<p>命令字: CREATE_NAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION<br>地编条目: Object Type&#x2F;Spawn&#x2F;Spawn a named object on a team at a waypoint with an orientation.<br>地编编号: 466<br>脚本描述:<br>参数: pawn ~ of type ~ on ~ at ~, rotated ~.<br>参数类型: String, String, String, String, Double<br>示例: (MCV JZ2, alliedconstructionyard, Player_4&#x2F;teamPlayer_4, MCV JZ2, 0.7853982)</p>
+<p>命令字: CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT<br>地编条目: Object Type&#x2F;Spawn&#x2F;Spawn an unnamed object on a team at a waypoint.<br>地编编号: 36<br>脚本描述:<br>参数: pawn unit of type ~ on ~ at<br>参数类型: String, String, String<br>示例: (alliedsuperweaponeffect, Player_1&#x2F;teamPlayer_1, Waypoint 79)</p>
+<p>命令字: CREATE_UNNAMED_ON_TEAM_AT_WAYPOINT_WITH_ORIENTATION<br>地编条目: Object Type&#x2F;Spawn&#x2F;Spawn an unnamed object on a team at a waypoint with an orientation.<br>地编编号: 467<br>脚本描述:<br>参数: pawn unit of type ~ on ~ at ~, rotated ~.<br>参数类型: String, String, String, Double<br>示例: (alliedrefinery, Player_1&#x2F;teamPlayer_1, MJ KC1.1, 0.7853982)</p>
+<p>命令字: NAMED_ATTACK_AREA<br>地编条目: Object Type&#x2F;Attack&#x2F;Named object attacks an area.<br>地编编号: 40<br>脚本描述:<br>参数: ~ attacks anything in<br>参数类型: String, String<br>示例: (UNIT - Soviet 01 Leviathan 01, TRIG_S1 - Bombard)</p>
+<p>命令字: NAMED_ATTACK_TEAM<br>地编条目: Object Type&#x2F;Attack&#x2F;Named object attacks Team.<br>地编编号: 42<br>脚本描述:<br>参数: ~ attacks<br>参数类型: String, String<br>示例: (JIANGJ1.1, Player_1&#x2F;teamPlayer_1)</p>
+<p>命令字: TEAM_ATTACK_NAMED<br>地编条目: Team&#x2F;Attack&#x2F;Team attacks a named object.<br>地编编号: 43<br>脚本描述:<br>参数: ~ attacks<br>参数类型: String, String<br>示例: (HX HM QSZ, QIAN SHAO ZHAN)</p>
+<p>命令字: NAMED_ENTER_NAMED<br>地编条目: Unused or Obsolete&#x2F;Object Type&#x2F;Transport&#x2F;Transport – load unit into specific.<br>地编编号: 45<br>脚本描述:<br>参数: ~ loads into<br>参数类型: String, String<br>示例: (????1, ????1)</p>
+<p>命令字: TEAM_ENTER_NAMED<br>地编条目: Unused or Obsolete&#x2F;Team&#x2F;Transport&#x2F;Transport – load team into specific.<br>地编编号: 46<br>脚本描述:<br>参数: ~ attempt to load into<br>参数类型: String, String<br>示例: (Allies01&#x2F;TEAM - Transport Bombers, UNIT - Airfield 1)</p>
+<p>命令字: NAMED_FOLLOW_WAYPOINTS<br>地编条目: Object Type&#x2F;Move&#x2F;Named object follow a waypoint path.<br>地编编号: 49<br>脚本描述:<br>参数: ~ follow<br>参数类型: String, String<br>示例: (SHI J Y1, SHI J LX1)</p>
+<p>命令字: NAMED_ATTACK_FOLLOW_WAYPOINTS<br>地编条目: Object Type&#x2F;Attack&#x2F;Named object attack-move along a waypoint path.<br>地编编号: 416<br>脚本描述:<br>参数: ~ AttackMove follows waypoints, beginning at<br>参数类型: String, String<br>示例: (XL VX1, XL VX)</p>
+<p>命令字: NAMED_FOLLOW_WAYPOINTS_EXACT<br>地编条目: Object Type&#x2F;Move&#x2F;Named object follow a waypoint path – exactly.<br>地编编号: 214<br>脚本描述:<br>参数: ~ EXACTLY follow<br>参数类型: String, String<br>示例: (YJ DD, YJ DD)</p>
+<p>命令字: TEAM_GUARD_OBJECT<br>地编条目: Team&#x2F;Guard&#x2F;Team guard a named object.<br>地编编号: 165<br>脚本描述:<br>参数: ~ begins guarding<br>参数类型: String, String<br>示例: (OpeningBullfrogs, Unit-Soviet05-RescueBoat)</p>
+<p>命令字: TEAM_GUARD_AREA<br>地编条目: Team&#x2F;Guard&#x2F;Team guard an area.<br>地编编号: 166<br>脚本描述: Please note that units guarding an area that is fogged will not be able to see a unit that enters the area and thus not attack so be sure that the area they are guarding is not fogged.<br>参数: ~ begins guarding<br>参数类型: String, String<br>示例: (TEAM - Allied01 - Carrier Base Defense, TRIG - Main Base - Lake - W)</p>
+<p>命令字: TEAM_GUARD_AREA_FROM_POSITION<br>地编条目: Team&#x2F;Guard&#x2F;Team guard an area from a location.<br>地编编号: 368<br>脚本描述: Please note that units guarding an area that is fogged will not be able to see a unit that enters the area and thus not attack so be sure that the area they are guarding is not fogged.<br>参数: ~ begins guarding ~ from<br>参数类型: String, String, String<br>示例: (Player_1&#x2F;teamPlayer_1, AREA - Soviet HQ, WP - Apoc Defend Point 01)</p>
+<p>命令字: UNIT_GUARD_AREA<br>地编条目: Object Type&#x2F;Guard&#x2F;Named object guard area.<br>地编编号: 347<br>脚本描述:<br>参数: ~ begins guarding<br>参数类型: String, String<br>示例: (myMcvName1, AT-Base01)</p>
+<p>命令字: NAMED_HUNT<br>地编条目: Object Type&#x2F;Attack&#x2F;Hunt (choose enemy target, move towards it, and attack when within range).<br>地编编号: 52<br>脚本描述:<br>参数: ~ begins hunting.<br>参数类型: String<br>示例: (UNIT - Kirov East)</p>
+<p>命令字: TEAM_HUNT<br>地编条目: Team&#x2F;Attack&#x2F;Hunt (choose enemy target, move towards it, and attack when within range).<br>地编编号: 53<br>脚本描述:<br>参数: ~ begins hunting.<br>参数类型: String<br>示例: (TEAM - Wave 02 - Infantry Invaders 01)</p>
+<p>命令字: PLAYER_DISABLE_BASE_CONSTRUCTION<br>地编条目: Player&#x2F;Build&#x2F;Permissions&#x2F;Player is not allowed to build buildings.<br>地编编号: 56<br>脚本描述:<br>参数: ~ is not allowed to build buildings.<br>参数类型: String<br>示例: (Player_2)</p>
+<p>命令字: PLAYER_DISABLE_FACTORIES<br>地编条目: Player&#x2F;Build&#x2F;Player cannot build from an object type.<br>地编编号: 57<br>脚本描述:<br>参数: ~ is not allowed to build from<br>参数类型: String, String<br>示例: (Player_1, japanconstructionyard)</p>
+<p>命令字: PLAYER_DISABLE_UNIT_CONSTRUCTION<br>地编条目: Player&#x2F;Build&#x2F;Permissions&#x2F;Player is not allowed to build units.<br>地编编号: 58<br>脚本描述:<br>参数: ~ is not allowed to build units.<br>参数类型: String<br>示例: (Player_1)</p>
+<p>命令字: PLAYER_ENABLE_BASE_CONSTRUCTION<br>地编条目: Player&#x2F;Build&#x2F;Permissions&#x2F;Player is allowed to build buildings.<br>地编编号: 59<br>脚本描述:<br>参数: ~ is allowed to build buildings.<br>参数类型: String<br>示例: (Player_2)</p>
+<p>命令字: PLAYER_ENABLE_UNIT_CONSTRUCTION<br>地编条目: Player&#x2F;Build&#x2F;Permissions&#x2F;Player is allowed to build units.<br>地编编号: 61<br>脚本描述:<br>参数: ~ is able to build units.<br>参数类型: String<br>示例: (Player_2)</p>
+<p>命令字: NAMED_DAMAGE<br>地编条目: Object Type&#x2F;Damage or Remove&#x2F;Deal damage to a named object.<br>地编编号: 63<br>脚本描述:<br>参数: ~ takes ~ points of damage.<br>参数类型: String, Int32<br>示例: (Unit-KillShip02, 500)</p>
+<p>命令字: NAMED_DELETE<br>地编条目: Object Type&#x2F;Damage or Remove&#x2F;Delete a named object.<br>地编编号: 64<br>脚本描述:<br>参数: ~ is removed from the world.<br>参数类型: String<br>示例: (DC1)</p>
+<p>命令字: TEAM_DELETE<br>地编条目: Team&#x2F;Damage or Remove&#x2F;Delete Team.<br>地编编号: 65<br>脚本描述:<br>参数: ~ is removed from the world.<br>参数类型: String<br>示例: (Player_1&#x2F;SH Q)</p>
+<p>命令字: NAMED_KILL<br>地编条目: Object Type&#x2F;Damage or Remove&#x2F;Kill a named object.<br>地编编号: 67<br>脚本描述:<br>参数: ~is dealt a lethal amount of damage.<br>参数类型: String<br>示例: (HZ MCV1)</p>
+<p>命令字: TEAM_KILL<br>地编条目: Team&#x2F;Damage or Remove&#x2F;Kill an entire team.<br>地编编号: 68<br>脚本描述:<br>参数: ~ is dealt a lethal amount of damage.<br>参数类型: String<br>示例: (Civilian_1&#x2F;Rubble)</p>
+<p>命令字: PLAYER_KILL<br>地编条目: Player&#x2F;Remove, Sell, or Transfer All&#x2F;Kill Player.<br>地编编号: 69<br>脚本描述:<br>参数: ll of ~’s buildings and units are dealt a lethal amount of damage.<br>参数类型: String<br>示例: (Allied01)</p>
+<p>命令字: NAMED_OUTLINE<br>地编条目: Object Type&#x2F;Flash or Color&#x2F;Outline a specific unit with an outline type.<br>地编编号: 512<br>脚本描述:<br>参数: ~ is set to ~ outline type.<br>参数类型: String, String<br>示例: (Player02 - Mirage Tank 1, NONE)</p>
+<p>命令字: NAMED_FLASH<br>地编条目: Object Type&#x2F;Flash or Color&#x2F;Flash a specific unit for a specified amount of time.<br>地编编号: 70<br>脚本描述:<br>参数: ~ flashes for ~ seconds.<br>参数类型: String, Int32<br>示例: (UNIT - Soviet Iron Curtain, 10)</p>
+<p>命令字: TEAM_FLASH<br>地编条目: Team&#x2F;Flash&#x2F;Flash Team for a specified amount of time.<br>地编编号: 71<br>脚本描述:<br>参数: ~ flashes for ~ seconds.<br>参数类型: String, Int32<br>示例: (TEAM - Suppressed Infantry 01, 10)</p>
+<p>命令字: NAMED_CUSTOM_COLOR<br>地编条目: Object Type&#x2F;Flash or Color&#x2F;Set a named object to use a special indicator color.<br>地编编号: 198<br>脚本描述:<br>参数: ~ uses the color ~ .<br>参数类型: String, Int32<br>示例: (JI DI 10, -32768)</p>
+<p>命令字: NAMED_FLASH_WHITE<br>地编条目: Object Type&#x2F;Flash or Color&#x2F;Flash a named object white for a specified amount of time.<br>地编编号: 194<br>脚本描述:<br>参数: ~ flashes white for ~ seconds.<br>参数类型: String, Int32<br>示例: (MCV , 5)</p>
+<p>命令字: TEAM_FLASH_WHITE<br>地编条目: Team&#x2F;Flash&#x2F;Flash Team white for a specified amount of time.<br>地编编号: 195<br>脚本描述:<br>参数: ~ flashes white for ~ seconds.<br>参数类型: String, Int32<br>示例: (Player_1&#x2F;BU BING, 10)</p>
+<p>命令字: MOVIE_PLAY_RADAR<br>地编条目: Media&#x2F;Video&#x2F;Play a movie in the radar.<br>地编编号: 73<br>脚本描述:<br>参数: ~ plays in the radar window.<br>参数类型: String<br>示例: (J06TH01)</p>
+<p>命令字: SOUND_PLAY_NAMED<br>地编条目: Media&#x2F;Audio&#x2F;Sound Effect&#x2F;Play a sound as though coming from a named object.<br>地编编号: 74<br>脚本描述:<br>参数: ~ plays as though coming from<br>参数类型: String, String<br>示例: (MA01_SovietSoldier01, UNIT - Conscript 05)</p>
+<p>命令字: PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT<br>地编条目: Media&#x2F;Audio&#x2F;EVA&#x2F;Play a sound effect as if it were an EVA event.<br>地编编号: 496<br>脚本描述:<br>参数: ~ plays as if it was an EVA event<br>参数类型: String<br>示例: (MA01_AlliedSoldier01)</p>
+<p>命令字: PLAY_SOUND_AS_IF_IT_WAS_AN_EVA_EVENT_WITH_SUBTITLE<br>地编条目: Media&#x2F;Audio&#x2F;EVA&#x2F;Play a sound effect as if it were an EVA event, and subtitle it.<br>地编编号: 497<br>脚本描述:<br>参数: ~ plays as if it was an EVA event, while displaying ~ for ~ seconds.<br>参数类型: String, String, Double<br>示例: (Aeva_CritStrucLost, SCRIPT:J04_OBJECTIVE_3_STRUCTS_Destroyed, 3)</p>
+<p>命令字: PLAY_SOUND_AS_AI_COCOMMANDER_DIALOG<br>地编条目: Media&#x2F;Audio&#x2F;EVA&#x2F;Play a sound effect as AI co-commander dialog.<br>地编编号: 569<br>脚本描述:<br>参数: ~ plays as AI co-commander dialog<br>参数类型: String<br>示例: (MA01_CoGiles02)</p>
+<p>命令字: PLAYER_TRANSFER_OWNERSHIP_PLAYER<br>地编条目: Player&#x2F;Remove, Sell, or Transfer All&#x2F;Transfer assets from one player to another player.<br>地编编号: 76<br>脚本描述:<br>参数: ll assets of ~ are transferred to<br>参数类型: String, String<br>示例: (Japan_04_Scripted, Japan_03)</p>
+<p>命令字: NAMED_TRANSFER_OWNERSHIP_PLAYER<br>地编条目: Object Type&#x2F;Allegiance&#x2F;Transfer a named object to the control of a Player.<br>地编编号: 77<br>脚本描述:<br>参数: ~ is transferred to the command of<br>参数类型: String, String<br>示例: (QX DG BY, Player_2)</p>
+<p>命令字: PLAYER_RELATES_PLAYER<br>地编条目: Player&#x2F;Allegiance&#x2F;Change how Player relates to another player.<br>地编编号: 78<br>脚本描述:<br>参数: ~ considers ~ to be<br>参数类型: String, String, Int32<br>示例: (Soviet_1, Player_1, 1)</p>
+<p>命令字: RADAR_CREATE_EVENT<br>地编条目: Interface&#x2F;Radar&#x2F;Create a radar event at a specified location.<br>地编编号: 80<br>脚本描述:<br>参数:  radar event occurs at ~ of type<br>参数类型: Vec3D, Int32<br>示例: ((1846.65, 3643.64, 280.00), 1)</p>
+<p>命令字: OBJECT_CREATE_RADAR_EVENT<br>地编条目: Interface&#x2F;Radar&#x2F;Create a radar event at a named object.<br>地编编号: 172<br>脚本描述:<br>参数:  radar event occurs at ~ of type<br>参数类型: String, Int32<br>示例: (UNIT - Tanya, 3)</p>
+<p>命令字: TEAM_CREATE_RADAR_EVENT<br>地编条目: Interface&#x2F;Radar&#x2F;Create a radar event at a Team.<br>地编编号: 173<br>脚本描述:<br>参数:  radar event occurs at ~ of type<br>参数类型: String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, 4)</p>
+<p>命令字: NAMED_SET_DISABLED<br>地编条目: Object Type&#x2F;Settings&#x2F;Disable – enable or disable.<br>地编编号: 536<br>脚本描述: Enable&#x2F;Disable a unit by type.  The types you should most be interested in are UNMANNED(pilot sniped), HELD(Standard disable), EMP(No Power).  The others can be used but the ones listed here are probably the mo<br>st popular.<br>参数: et  ~ ~ to ~.<br>参数类型: String, String, Int32<br>示例: (CNB, EMP, 1)</p>
+<p>命令字: MAP_REVEAL_AT_WAYPOINT<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Reveal map at waypoint – fog.<br>地编编号: 81<br>脚本描述:<br>参数: he map is revealed at ~ with a radius of ~ feet for ~.<br>参数类型: String, Double, String<br>示例: (WP - Expand Point, 100, Player_1)</p>
+<p>命令字: MAP_REVEAL_ALL<br>地编条目: Unused or Obsolete&#x2F;Map&#x2F;Shroud or Reveal&#x2F;Reveal the entire map for Player.<br>地编编号: 89<br>脚本描述:<br>参数: he world is revealed for ~.<br>参数类型: String<br>示例: (Player_1)</p>
+<p>命令字: MAP_REVEAL_ALL_PERM<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Reveal the entire map permanently for Player.<br>地编编号: 183<br>脚本描述:<br>参数: he world is revealed permanently for ~.<br>参数类型: String<br>示例: (Player_1)</p>
+<p>命令字: MAP_REVEAL_ALL_UNDO_PERM<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Un-Reveal the entire map permanently for Player.<br>地编编号: 184<br>脚本描述:<br>参数: ndo the permanent reveal for ~.  This will mess things up badly if called when there has been no permanent reveal.<br>参数类型: String<br>示例: (Player_1)</p>
+<p>命令字: DISABLE_BORDER_SHROUD<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Border Shroud is turned off.<br>地编编号: 242<br>脚本描述:<br>参数: hroud off the map edges is turned off.<br>参数类型:<br>示例: ()</p>
+<p>命令字: MAP_SHROUD_SET_RESHROUD_TIME<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Set Re-Fog delay.<br>地编编号: 513<br>脚本描述: This will set the length of time it takes for the fog of war to come back after a unit leaves the area.  Defined in seconds, can use decimals like .5 for half a second.<br>参数: et Fog Delay(In Seconds) to<br>参数类型: Double<br>示例: (1)</p>
+<p>命令字: TEAM_GARRISON_SPECIFIC_BUILDING<br>地编条目: Team&#x2F;Garrison&#x2F;Garrison a named object with Team.<br>地编编号: 90<br>脚本描述:<br>参数: ~ enters into<br>参数类型: String, String<br>示例: (TEAM - Garrison 01, STRUCTURE - Intro Garrison 01)</p>
+<p>命令字: EXIT_SPECIFIC_BUILDING<br>地编条目: Object Type&#x2F;Garrison&#x2F;Empty a named object.<br>地编编号: 91<br>脚本描述:<br>参数: ~ empties.<br>参数类型: String<br>示例: (UNIT - Transport 01)</p>
+<p>命令字: TEAM_GARRISON_NEAREST_BUILDING<br>地编条目: Team&#x2F;Garrison&#x2F;Garrison a nearby structure with Team.<br>地编编号: 92<br>脚本描述:<br>参数: ~ garrison a nearby object.<br>参数类型: String<br>示例: (Player_1&#x2F;teamPlayer_1)</p>
+<p>命令字: TEAM_EXIT_ALL_BUILDINGS<br>地编条目: Team&#x2F;Garrison&#x2F;Exit all objects a team is in.<br>地编编号: 93<br>脚本描述:<br>参数: ~ exits all objects.<br>参数类型: String<br>示例: (PlyrCivilian&#x2F;P1-Ninjas)</p>
+<p>命令字: NAMED_GARRISON_SPECIFIC_BUILDING<br>地编条目: Object Type&#x2F;Garrison&#x2F;Garrison a named object with a named object.<br>地编编号: 94<br>脚本描述:<br>参数: ~ garrison<br>参数类型: String, String<br>示例: (UNIT - Salvaged Tank 01, STRUCTURE - Salvage Yard 01)</p>
+<p>命令字: NAMED_GARRISON_SPECIFIC_BUILDING_INSTANTLY<br>地编条目: Object Type&#x2F;Garrison&#x2F;Garrison a named object instantly with a named object.<br>地编编号: 428<br>脚本描述: Note that this Script will not do any proper checks to make sure the objects container is valid for the unit entering it.  If you add a unit that is not valid for the container the behavior thereafter is undefi<br>ned and could possibly crash.<br>参数: ~ garrison’s ~ instantly.<br>参数类型: String, String<br>示例: (UNIT - Tanya, UNIT - Tanya Garrison)</p>
+<p>命令字: TEAM_GARRISON_SPECIFIC_BUILDING_INSTANTLY<br>地编条目: Team&#x2F;Garrison&#x2F;Garrison a named object instantly with a team.<br>地编编号: 429<br>脚本描述: Note that this Script will not do any proper checks to make sure the objects container is valid for the unit entering it.  If you add a unit that is not valid for the container the behavior thereafter is undefi<br>ned and could possibly crash.<br>参数: ~ garrison’s ~ instantly.<br>参数类型: String, String<br>示例: (Player_1&#x2F;TY, TAN YA L)</p>
+<p>命令字: TEAM_GARRISON_TEAM_INSTANTLY<br>地编条目: Team&#x2F;Garrison&#x2F;Garrison a team instantly with a team.<br>地编编号: 432<br>脚本描述: Note that this Script will not do any proper checks to make sure the objects container is valid for the unit entering it.  If you add a unit that is not valid for the container the behavior thereafter is undefi<br>ned and could possibly crash.<br>参数: ~ garrison’s ~ instantly.<br>参数类型: String, String<br>示例: (TEAM - Sudden Transports Infantry, Player_1&#x2F;teamPlayer_1)</p>
+<p>命令字: NAMED_EXIT_BUILDING<br>地编条目: Object Type&#x2F;Garrison&#x2F;Named object exit whatever object it’s in.<br>地编编号: 96<br>脚本描述:<br>参数: ~ leaves it’s garrison.<br>参数类型: String<br>示例: (UNIT - Tanya)</p>
+<p>命令字: PLAYER_EXIT_ALL_BUILDINGS<br>地编条目: Player&#x2F;Garrison&#x2F;All of Player’s units leave their garrisons.<br>地编编号: 97<br>脚本描述:<br>参数: ll of ~ units leave their garrisons.<br>参数类型: String<br>示例: (Player_2)</p>
+<p>命令字: TEAM_MERGE_INTO_TEAM<br>地编条目: Team&#x2F;Spawn, Build, or Merge&#x2F;Merge Team into another team.<br>地编编号: 82<br>脚本描述:<br>参数: ~ merges onto<br>参数类型: String, String<br>示例: (PlyrCivilian&#x2F;TEAM - Parked Battleships, teamJapan04)</p>
+<p>命令字: DISABLE_INPUT<br>地编条目: Interface&#x2F;Input&#x2F;User input – disable.<br>地编编号: 83<br>脚本描述:<br>参数: isable mouse and keyboard input.<br>参数类型:<br>示例: ()</p>
+<p>命令字: ENABLE_INPUT<br>地编条目: Interface&#x2F;Input&#x2F;User input – enable.<br>地编编号: 84<br>脚本描述:<br>参数: nable mouse and keyboard input.<br>参数类型:<br>示例: ()</p>
+<p>命令字: SOUND_AMBIENT_PAUSE<br>地编条目: Media&#x2F;Audio&#x2F;Sound Effect&#x2F;Suspend the ambient sounds.<br>地编编号: 85<br>脚本描述:<br>参数: ause the ambient sounds.<br>参数类型:<br>示例: ()</p>
+<p>命令字: SOUND_AMBIENT_RESUME<br>地编条目: Media&#x2F;Audio&#x2F;Sound Effect&#x2F;Resume the ambient sounds.<br>地编编号: 86<br>脚本描述:<br>参数: esume the ambient sounds.<br>参数类型:<br>示例: ()</p>
+<p>命令字: MUSIC_SET_TRACK<br>地编条目: Media&#x2F;Audio&#x2F;Music&#x2F;Play a music track.<br>地编编号: 87<br>脚本描述:<br>参数: lay ~ using fadeout (<del>) and fadein (</del>).<br>参数类型: String, Int32, Int32<br>示例: (TEMP_RA2_Sco, 1, 1)</p>
+<p>命令字: AUDIO_POP_MUSIC<br>地编条目: Media&#x2F;Audio&#x2F;Music&#x2F;Pop music track.<br>地编编号: 344<br>脚本描述:<br>参数: op the current music track off the stack using fadeout (<del>) and fadein (</del>).<br>参数类型: Int32, Int32<br>示例: (1, 1)</p>
+<p>命令字: PATH_MUSIC_PLAY_EVENT<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Play Event.<br>地编编号: 543<br>脚本描述:<br>参数: lay a specific Path Music Event(~), also Suspends Dynamic State System( if running ).<br>参数类型: String<br>示例: (S_A07Nanocores)</p>
+<p>命令字: PATH_MUSIC_ENABLE_DYNAMIC_SYSTEM<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Enable Standard Dynamic System.<br>地编编号: 545<br>脚本描述:<br>参数: nable the Standard Path Music Dynamic State System<br>参数类型:<br>示例: ()</p>
+<p>命令字: PATH_MUSIC_ENABLE_SPECIFIC_DYNAMIC_SYSTEM<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Enable Specific Dynamic System.<br>地编编号: 555<br>脚本描述:<br>参数: nables a specific Path Music Dynamic State System(~)<br>参数类型: String<br>示例: (Standard_Full)</p>
+<p>命令字: PATH_MUSIC_ENABLE_RESUME_SYSTEM<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Resume Dynamic System.<br>地编编号: 556<br>脚本描述:<br>参数: esume a Suspended Path Music Dynamic State System<br>参数类型:<br>示例: ()</p>
+<p>命令字: PATH_MUSIC_STOP_MUSIC<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Stop Music.<br>地编编号: 546<br>脚本描述:<br>参数: top any Path Music currently playing.<br>参数类型:<br>示例: ()</p>
+<p>命令字: PATH_MUSIC_FADE_OUT_MUSIC<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Fade Out Music.<br>地编编号: 564<br>脚本描述:<br>参数: ade Out Path Music Volume( Stop Music after fade ) over (~) seconds.<br>参数类型: Double<br>示例: (2)</p>
+<p>命令字: PATH_MUSIC_FADE_IN_MUSIC<br>地编条目: Media&#x2F;Audio&#x2F;PathfinderMusic&#x2F;Fade In Music.<br>地编编号: 565<br>脚本描述:<br>参数: ade In Path Music Volume over (~) seconds.<br>参数类型: Double<br>示例: (2)</p>
+<p>命令字: CAMERA_LETTERBOX_BEGIN<br>地编条目: Cinematics&#x2F;Settings&#x2F;Start letterbox mode.<br>地编编号: 101<br>脚本描述: This will hide ALL UI elements including the radar.<br>参数: tart letterbox mode (hide UI, add border).<br>参数类型:<br>示例: ()</p>
+<p>命令字: CAMERA_LETTERBOX_BEGIN_WITH_RADAR<br>地编条目: Cinematics&#x2F;Settings&#x2F;Start letterbox mode(shows radar).<br>地编编号: 563<br>脚本描述: This will display letterbox mode and leave the radar up.<br>参数: tart letterbox mode (hide UI, add border), but keep the Radar visible.<br>参数类型:<br>示例: ()</p>
+<p>命令字: CAMERA_LETTERBOX_END<br>地编条目: Cinematics&#x2F;Settings&#x2F;End letterbox mode.<br>地编编号: 102<br>脚本描述:<br>参数: nd letterbox mode (show UI, remove border).<br>参数类型:<br>示例: ()</p>
+<p>命令字: HIDE_UI<br>地编条目: Cinematics&#x2F;Settings&#x2F;Hide UI<br>地编编号: 263<br>脚本描述: Hide UI (like letterbox mode, but with no border).<br>参数: ike letterbox mode, but without the borders<br>参数类型:<br>示例: ()</p>
+<p>命令字: SHOW_UI<br>地编条目: Cinematics&#x2F;Settings&#x2F;Show UI<br>地编编号: 264<br>脚本描述:<br>参数: how UI<br>参数类型:<br>示例: ()</p>
+<p>命令字: FREEZE_TIME<br>地编条目: Cinematics&#x2F;Settings&#x2F;Freeze time.<br>地编编号: 114<br>脚本描述:<br>参数: reeze time.<br>参数类型:<br>示例: ()</p>
+<p>命令字: UNFREEZE_TIME<br>地编条目: Cinematics&#x2F;Settings&#x2F;Unfreeze time.<br>地编编号: 115<br>脚本描述:<br>参数: nfreeze time.<br>参数类型:<br>示例: ()</p>
+<p>命令字: SHOW_MILITARY_CAPTION<br>地编条目: Tutorial&#x2F;Show windowed text caption.<br>地编编号: 116<br>脚本描述:<br>参数: how ~ for ~ seconds.<br>参数类型: String, Double<br>示例: (SCRIPT:A01_HELPTEXT_06, 8)</p>
+<p>命令字: MUSIC_SET_VOLUME<br>地编条目: Media&#x2F;Audio&#x2F;Volume&#x2F;Set the current music volume.<br>地编编号: 119<br>脚本描述:<br>参数: et the desired music volume to ~%. (0-100)<br>参数类型: Double<br>示例: (90)</p>
+<p>命令字: TEAM_TRANSFER_TO_PLAYER<br>地编条目: Team&#x2F;Allegiance&#x2F;Transfer control of Team to Player.<br>地编编号: 127<br>脚本描述:<br>参数: ontrol of ~ transfers to<br>参数类型: String, String<br>示例: (Allied_1&#x2F;TEAM - Player 1 Starting Team, Player_1)</p>
+<p>命令字: PLAYER_SET_MONEY<br>地编条目: Player&#x2F;Money&#x2F;Set Player’s money.<br>地编编号: 128<br>脚本描述:<br>参数: et ~’s money to $<br>参数类型: String, Int32<br>示例: (Player_1, 18000)</p>
+<p>命令字: PLAYER_SET_MONEY_CAP<br>地编条目: Player&#x2F;Money&#x2F;Set player’s money cap.<br>地编编号: 490<br>脚本描述:<br>参数: et ~’s money cap to $<br>参数类型: String, Int32<br>示例: (Player_1, 9999)</p>
+<p>命令字: PLAYER_GIVE_MONEY<br>地编条目: Player&#x2F;Money&#x2F;Increase or Decrease Player’s money.<br>地编编号: 129<br>脚本描述:<br>参数: ~ gets $<br>参数类型: String, Int32<br>示例: (Player_3, 20000)</p>
+<p>命令字: DISPLAY_COUNTER<br>地编条目: Interface&#x2F;Counters and Timers&#x2F;Specific counter – display.<br>地编编号: 188<br>脚本描述:<br>参数: how ~ with text<br>参数类型: String, String<br>示例: (COUTNER - Javelins Trained, SCRIPT:A01_Javelin_Counter)</p>
+<p>命令字: HIDE_COUNTER<br>地编条目: Interface&#x2F;Counters and Timers&#x2F;Specific counter – hide.<br>地编编号: 189<br>脚本描述:<br>参数: ide<br>参数类型: String<br>示例: (COUTNER - Javelins Trained)</p>
+<p>命令字: DISPLAY_COUNTDOWN_TIMER<br>地编条目: Interface&#x2F;Counters and Timers&#x2F;Specific timer – display.<br>地编编号: 130<br>脚本描述:<br>参数: how ~ with text<br>参数类型: String, String<br>示例: (SJ, SCRIPT:A07_OBJECTIVE_1_SUPWEP_COUNTDOWN)</p>
+<p>命令字: HIDE_COUNTDOWN_TIMER<br>地编条目: Interface&#x2F;Counters and Timers&#x2F;Specific timer – hide.<br>地编编号: 131<br>脚本描述:<br>参数: ide<br>参数类型: String<br>示例: (SJ)</p>
+<p>命令字: DISABLE_COUNTDOWN_TIMER_DISPLAY<br>地编条目: Interface&#x2F;Counters and Timers&#x2F;All timers – hide.<br>地编编号: 133<br>脚本描述:<br>参数: isables timer display.<br>参数类型:<br>示例: ()</p>
+<p>命令字: ENABLE_COUNTDOWN_TIMER_DISPLAY<br>地编条目: Interface&#x2F;Counters and Timers&#x2F;All timers – display.<br>地编编号: 132<br>脚本描述:<br>参数: nables timer display.<br>参数类型:<br>示例: ()</p>
+<p>命令字: NAMED_SET_SPECIAL_POWER_COUNTDOWN<br>地编条目: Object Type&#x2F;Special Power&#x2F;Countdown timer – set.<br>地编编号: 136<br>脚本描述:<br>参数: et ~’s ~ to ~ seconds.<br>参数类型: String, String, Int32<br>示例: (o_allied_super, specialpowerchronosphereobjectselect, 480)</p>
+<p>命令字: PLAYER_SET_SPECIAL_POWER_COUNTDOWN<br>地编条目: Player&#x2F;Special Power&#x2F;Special power – set countdown timer.<br>地编编号: 437<br>脚本描述:<br>参数: et ~’s ~ to ~ seconds.<br>参数类型: String, String, Int32<br>示例: (Allied03, specialpowerparticlecannon, 420)</p>
+<p>命令字: PLAYER_FIRE_SPECIAL_POWER_AT_WAYPOINT<br>地编条目: Player&#x2F;Special Power&#x2F;Special power – fire at waypoint.<br>地编编号: 430<br>脚本描述:<br>参数: ~ fires ~ at ~.<br>参数类型: String, String, String<br>示例: (Player_2, specialpowerfinalsquadron_l1, XYZJ1)</p>
+<p>命令字: SKIRMISH_FIRE_SPECIAL_POWER_AT_MOST_COST<br>地编条目: Player&#x2F;Special Power&#x2F;Special power – fire at enemy’s highest cost area.<br>地编编号: 200<br>脚本描述:<br>参数: ~ fire ~ at enemy’s most costly area.<br>参数类型: String, String<br>示例: (Player_2, specialpowerjapannavalpower)</p>
+<p>命令字: FIRE_SPECIAL_POWER_ON_NEAREST_OBJECTTYPE_BY_PLAYER<br>地编条目: Player&#x2F;Special Power&#x2F;Special power – fire on nearest object type to team owned by player.<br>地编编号: 339<br>脚本描述:<br>参数: ~ fire ~ on nearest object of ~ to ~ owned by<br>参数类型: String, String, String, String, String<br>示例: (Japan03_Emperor, specialpowerfinalsquadron_l1, _object list_soviet all units, teamJapan03_Emperor, Player_1)</p>
+<p>命令字: FIRE_SPECIAL_POWER_ON_TEAM<br>地编条目: Player&#x2F;Special Power&#x2F;Special power – fire on team.<br>地编编号: 340<br>脚本描述:<br>参数: ~ fire ~ on<br>参数类型: String, String, String<br>示例: (Japan03_Emperor, specialpower_pointdefensedrones, EmperorMecha)</p>
+<p>命令字: NAMED_FIRE_SPECIAL_POWER_AT_WAYPOINT<br>地编条目: Object Type&#x2F;Special Power&#x2F;Special Power – fire at location.<br>地编编号: 137<br>脚本描述:<br>参数: ~ fires ~ at ~.<br>参数类型: String, String, String<br>示例: (POWERSTORE - Bomberdrop - 2, specialpowercampalliedbomberdrop2, WP - Allied02 - Deploy - Bomber - 2)</p>
+<p>命令字: NAMED_STOP<br>地编条目: Object Type&#x2F;Move&#x2F;Unit stops.<br>地编编号: 140<br>脚本描述:<br>参数: ~ stops.<br>参数类型: String<br>示例: (UNIT - Peacekeeper 05)</p>
+<p>命令字: TEAM_STOP<br>地编条目: Team&#x2F;Move&#x2F;Team stops.<br>地编编号: 141<br>脚本描述:<br>参数: ~ stops.<br>参数类型: String<br>示例: (Player_1&#x2F;teamPlayer_1)</p>
+<p>命令字: TEAM_SET_OVERRIDE_RELATION_TO_TEAM<br>地编条目: Team&#x2F;Allegiance&#x2F;Override Team’s relationship to a Team.<br>地编编号: 145<br>脚本描述:<br>参数: ~ considers ~ to be ~ (rather than using the the player relationship).<br>参数类型: String, String, Int32<br>示例: (Player_1&#x2F;TEAM_P1 - Commando, Soviet01&#x2F;TEAM - Soviet 01 Docks, 1)</p>
+<p>命令字: TEAM_REMOVE_ALL_OVERRIDE_RELATIONS<br>地编条目: Team&#x2F;Allegiance&#x2F;Remove all overrides to Team’s relationship to Teams and Players.<br>地编编号: 147<br>脚本描述:<br>参数: ~ uses the player relationship to all other teams and players.<br>参数类型: String<br>示例: (TEAM - Legion 01)</p>
+<p>命令字: PLAYER_CAMERA_TETHER_NAMED<br>地编条目: Cinematics&#x2F;Camera&#x2F;Begin tether player’s camera to a specific unit.<br>地编编号: 566<br>脚本描述:<br>参数: ~ have player camera tethered to ~.  Snap camera to object is ~.  Amount of play is ~.<br>参数类型: String, String, Int32, Double<br>示例: (Player_2, UNIT - P2 Human Transport 02, 1, 500)</p>
+<p>命令字: CAMERA_STOP_TETHER_NAMED<br>地编条目: Cinematics&#x2F;Camera&#x2F;End tether to any units.<br>地编编号: 139<br>脚本描述:<br>参数: top tether to any units.<br>参数类型:<br>示例: ()</p>
+<p>命令字: TEAM_SET_OVERRIDE_RELATION_TO_PLAYER<br>地编条目: Team&#x2F;Allegiance&#x2F;Override Team’s relationship to a Player.<br>地编编号: 149<br>脚本描述:<br>参数: ~ considers ~ to be ~ (rather than using the the player relationship).<br>参数类型: String, String, String<br>示例: (TEAM - Wave 04 - Naval Group 01, Player_1, Enemy)</p>
+<p>命令字: PLAYER_SET_OVERRIDE_RELATION_TO_TEAM<br>地编条目: Player&#x2F;Allegiance&#x2F;Override Player’s relationship to another team.<br>地编编号: 150<br>脚本描述:<br>参数: ~ considers ~ to be ~ (rather than using the the player relationship).<br>参数类型: String, String, Int32<br>示例: (Player_1, Soviet04&#x2F;TEAM - Dock 01, 2)</p>
+<p>命令字: UNIT_EXECUTE_SEQUENTIAL_SCRIPT<br>地编条目: Unused or Obsolete&#x2F;Object Type&#x2F;SequentialScript&#x2F;Set a specific unit to execute a script sequentially.<br>地编编号: 151<br>脚本描述:<br>参数: ~ executes ~ sequentially.<br>参数类型: String, String<br>示例: (REFERENCE - Object A, Objective 5 - Object A - Link)</p>
+<p>命令字: TEAM_EXECUTE_SEQUENTIAL_SCRIPT<br>地编条目: Unused or Obsolete&#x2F;Team&#x2F;SequentialScript&#x2F;Execute script sequentially – start.<br>地编编号: 154<br>脚本描述:<br>参数: ~ executes ~ sequentially.<br>参数类型: String, String<br>示例: (TEAM - Obj1 - Destroyers - 1, Allied02 - Objective 1 - Destroyers 1 - GO)</p>
+<p>命令字: UNIT_STOP_SEQUENTIAL_SCRIPT<br>地编条目: Object Type&#x2F;SequentialScript&#x2F;Set a named object to stop executing a sequential script.<br>地编编号: 153<br>脚本描述:<br>参数: ~ stops executing.<br>参数类型: String<br>示例: (UNIT - Trooper 1 - Tankbuster A)</p>
+<p>命令字: TEAM_STOP_SEQUENTIAL_SCRIPT<br>地编条目: Team&#x2F;SequentialScript&#x2F;Execute script sequentially – stop.<br>地编编号: 156<br>脚本描述:<br>参数: ~ stops executing.<br>参数类型: String<br>示例: (StartingUnits&#x2F;TEAM - MCV 02 Group)</p>
+<p>命令字: UNIT_IDLE_FOR_FRAMECOUNT<br>地编条目: Object Type&#x2F;SequentialScript&#x2F;Named object idles for some number of frames.<br>地编编号: 158<br>脚本描述:<br>参数: ~ idles for ~ frames.<br>参数类型: String, Int32<br>示例: (myMcvName1, 1)</p>
+<p>命令字: UNIT_IDLE_FOR_SECONDS<br>地编条目: Object Type&#x2F;SequentialScript&#x2F;Named object idles for some number of seconds.<br>地编编号: 307<br>脚本描述:<br>参数: ~ idles for ~ seconds.<br>参数类型: String, Int32<br>示例: (UNIT - Soviet 04 Twinblade 01, 4)</p>
+<p>命令字: UNIT_SET_MODELCONDITION<br>地编条目: Object Type&#x2F;Settings&#x2F;Change Custom Model Condition flag.<br>地编编号: 248<br>脚本描述: Sets the USER_x model state up to 10 currently on a given object.<br>参数: ~ sets custom model condition number (1-10) ~ to ~.<br>参数类型: String, Int32, Int32<br>示例: (relay_station_01, 1, 1)</p>
+<p>命令字: TEAM_SET_MODELCONDITION<br>地编条目: Team&#x2F;Settings&#x2F;Change Custom Model Condition flag - all.<br>地编编号: 249<br>脚本描述:<br>参数: ~ sets custom model condition number (1-4) ~ to ~.<br>参数类型: String, Int32, Int32<br>示例: (TEAM - Soviet Saluting Conscripts, 2, 1)</p>
+<p>命令字: UNIT_SET_MODELCONDITION_FOR_DURATION<br>地编条目: Object Type&#x2F;Settings&#x2F;Set a model condition flag on a named object for duration. % specifies # of members in horde that get this.<br>地编编号: 327<br>脚本描述:<br>参数: ~ sets ~ for ~ seconds. Percentage (hordes) ~.<br>参数类型: String, String, Double, Double<br>示例: (STRUCTURE - KLF 2, USER_1, 1E+08, 1)</p>
+<p>命令字: UNIT_SET_MODELCONDITION_GENERIC<br>地编条目: Object Type&#x2F;Settings&#x2F;Set a model condition flag on a named object for duration(optional).<br>地编编号: 547<br>脚本描述: Sets a model state on the given object. Can optionally set the state to expire after (x) seconds, 0 sets the state permanently until manually cleared via the cleear model state script.<br>参数: ~ sets ~ for ~ seconds(optional).<br>参数类型: String, String, Double<br>示例: (FST, USER_1, 99999)</p>
+<p>命令字: UNIT_CLEAR_MODELCONDITION<br>地编条目: Object Type&#x2F;Settings&#x2F;Clear model condition flag on a named object.<br>地编编号: 328<br>脚本描述:<br>参数: ~ clears ~.<br>参数类型: String, String<br>示例: (Struct-JapanFIFReactor01, USER_1)</p>
+<p>命令字: TEAM_SET_MODELCONDITION_FOR_DURATION<br>地编条目: Unused or Obsolete&#x2F;Team&#x2F;Settings&#x2F;Set a model condition flag on a team (and horde members) for duration. % specifies # of members in team that get this.<br>地编编号: 329<br>脚本描述:<br>参数: ~ sets model condition ~ for ~ seconds. Percentage ~.<br>参数类型: String, String, Double, Double<br>示例: (Japan04&#x2F;TEAM - Engineers, EMOTION_CELEBRATING, 10, 1)</p>
+<p>命令字: TEAM_IDLE_FOR_FRAMECOUNT<br>地编条目: Team&#x2F;SequentialScript&#x2F;Idle for some number of frames.<br>地编编号: 160<br>脚本描述:<br>参数: ~ idles for ~ frames.<br>参数类型: String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, 1)</p>
+<p>命令字: TEAM_GUARD_FOR_SECONDS<br>地编条目: Unused or Obsolete&#x2F;Team&#x2F;SequentialScript&#x2F;Guard – number of seconds.<br>地编编号: 308<br>脚本描述:<br>参数: ~ guards for ~ seconds.<br>参数类型: String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, 6)</p>
+<p>命令字: TEAM_IDLE_FOR_SECONDS<br>地编条目: Team&#x2F;SequentialScript&#x2F;Idle for some number of seconds.<br>地编编号: 309<br>脚本描述:<br>参数: ~ idles for ~ seconds.<br>参数类型: String, Int32<br>示例: (TEAM - Intro Patrol 01, 5)</p>
+<p>命令字: HUMAN_IMPASSABLE_AREA<br>地编条目: Map&#x2F;Make area impassable for human player.<br>地编编号: 383<br>脚本描述:<br>参数: Make area ~ impassable for human player:<br>参数类型: String, Int32<br>示例: (AREA - Protect InfTeam, 1)</p>
+<p>命令字: NAMED_USE_COMMANDBUTTON_ABILITY<br>地编条目: Object Type&#x2F;CommandButton&#x2F;Use commandbutton ability.<br>地编编号: 192<br>脚本描述:<br>参数: ~ use ~.<br>参数类型: String, String<br>示例: (YJ DD, Command_ActivateEjectPassengersSpecialPowerUntargeted)</p>
+<p>命令字: NAMED_USE_COMMANDBUTTON_ABILITY_ON_NAMED<br>地编条目: Object Type&#x2F;CommandButton&#x2F;Use commandbutton ability on a specific Unit.<br>地编编号: 161<br>脚本描述:<br>参数: ~ use ~ on ~.<br>参数类型: String, String, String<br>示例: (UNIT - Wave 01 - Bear 01, Command_ActivateRoarSpecialPower, UNIT - Peacekeeper 01)</p>
+<p>命令字: NAMED_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT<br>地编条目: Object Type&#x2F;CommandButton&#x2F;Use commandbutton ability at a waypoint.<br>地编编号: 162<br>脚本描述:<br>参数: ~ use ~ at ~.<br>参数类型: String, String, String<br>示例: (MCV , Command_UnPackAlliedMCV, MCV BS )</p>
+<p>命令字: TEAM_USE_COMMANDBUTTON_ABILITY<br>地编条目: Team&#x2F;CommandButton&#x2F;Use commandbutton ability.<br>地编编号: 193<br>脚本描述:<br>参数: ~ use ~.<br>参数类型: String, String<br>示例: (Player_2&#x2F;VX G1.1, Command_JAAVT1_Transform)</p>
+<p>命令字: TEAM_USE_COMMANDBUTTON_ABILITY_ON_NAMED<br>地编条目: Team&#x2F;CommandButton&#x2F;Use commandbutton ability on a named object.<br>地编编号: 190<br>脚本描述:<br>参数: ~ use ~ on ~.<br>参数类型: String, String, String<br>示例: (EMP1, Command_ActivateEMPCruiseMissleSpecialPower, ????1)</p>
+<p>命令字: TEAM_USE_COMMANDBUTTON_ABILITY_AT_WAYPOINT<br>地编条目: Team&#x2F;CommandButton&#x2F;Use commandbutton ability at a waypoint.<br>地编编号: 191<br>脚本描述:<br>参数: ~ use ~ at ~.<br>参数类型: String, String, String<br>示例: (Player_1&#x2F;Team-P1MCV, Command_UnPackAlliedMCV, WP_AlliedMCV)</p>
+<p>命令字: MAP_SWITCH_BORDER<br>地编条目: Map&#x2F;Modify&#x2F;Change the active border of the map.<br>地编编号: 163<br>脚本描述:<br>参数: ~ becomes the active border.<br>参数类型: Int32<br>示例: (1)</p>
+<p>命令字: SCREEN_SHAKE<br>地编条目: Cinematics&#x2F;Camera&#x2F;Shake Screen.<br>地编编号: 169<br>脚本描述:<br>参数: he screen will shake with<br>参数类型: Int32<br>示例: (1)</p>
+<p>命令字: TECHTREE_MODIFY_BUILDABILITY_OBJECT<br>地编条目: Player&#x2F;Build&#x2F;Adjust the tech tree for a specific object type.<br>地编编号: 170<br>脚本描述:<br>参数: ~ becomes<br>参数类型: String, Int32<br>示例: (alliednavalyard, 1)</p>
+<p>命令字: SOUND_DISABLE_TYPE<br>地编条目: Media&#x2F;Audio&#x2F;Sound Events&#x2F;Sound Events – disable type.<br>地编编号: 175<br>脚本描述:<br>参数: ~ is disabled.<br>参数类型: String<br>示例: (Seva_EnemyUnitDet)</p>
+<p>命令字: SOUND_ENABLE_TYPE<br>地编条目: Media&#x2F;Audio&#x2F;Sound Events&#x2F;Sound Events – enable type.<br>地编编号: 176<br>脚本描述:<br>参数: ~ is enabled.<br>参数类型: String<br>示例: (Aeva_NewConOptons)</p>
+<p>命令字: SOUND_ENABLE_ALL<br>地编条目: Media&#x2F;Audio&#x2F;Sound Events&#x2F;Sound Events – enable all.<br>地编编号: 177<br>脚本描述:<br>参数: nable all sound events.<br>参数类型:<br>示例: ()</p>
+<p>命令字: TEAM_ATTACK_MOVE_TOWARDS_NEAREST_OBJECT_TYPE<br>地编条目: Team&#x2F;Attack&#x2F;Move team towards the nearest object of a specific type<br>地编编号: 418<br>脚本描述:<br>参数: ~ will AttackMove towards the nearest<br>参数类型: String, String<br>示例: (Player_1&#x2F;teamPlayer_1, sovietminer)</p>
+<p>命令字: ATTACK_MOVE_TEAM_TO_NEAREST_OBJECT_OF_TYPE_OF_PLAYER<br>地编条目: Team&#x2F;Attack&#x2F;Move team towards the nearest object of a specific type owned by a player<br>地编编号: 426<br>脚本描述:<br>参数: ~ will AttackMove towards the nearest ~ owned by<br>参数类型: String, String, String<br>示例: (Player_1&#x2F;teamPlayer_1, sovietwarfactory, Japan02)</p>
+<p>命令字: TEAM_PARTIAL_USE_COMMANDBUTTON<br>地编条目: Team&#x2F;CommandButton&#x2F;Use command ability – partial – self.<br>地编编号: 210<br>脚本描述:<br>参数: ~% of ~ perform ~.<br>参数类型: Double, String, String<br>示例: (100, TEAM - Rocket Angel Reinforcements P1, Command_ToggleLockDownGunSpecialPower)</p>
+<p>命令字: OBJECTLIST_ADDOBJECTTYPE<br>地编条目: Scripting&#x2F;Object List&#x2F;Add Object Type to Object List.<br>地编编号: 216<br>脚本描述:<br>参数: dd ~ to<br>参数类型: String, String<br>示例: (sovietantiinfantryinfantry, objective 01 - soviet infantry)</p>
+<p>命令字: MAP_REVEAL_PERMANENTLY_AT_WAYPOINT<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Reveal map at waypoint – permanently.<br>地编编号: 218<br>脚本描述:<br>参数: he map is permanently revealed at ~ with a radius of ~ for ~. (Afterwards referred to as ~).<br>参数类型: String, Double, String, String<br>示例: (WP - Obj - Island A Shroud Reveal, 200, Player_1, REVEAL - WP - Obj - Island A Shroud Reveal)</p>
+<p>命令字: MAP_REVEAL_PERMANENTLY_IN_TRIGGER<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Reveal map in polytrigger – permanently.<br>地编编号: 421<br>脚本描述:<br>参数: he map is permanently revealed in trigger ~ for ~. (Afterwards referred to as ~).<br>参数类型: String, String, String<br>示例: (TRIG - Intro - Reveal Shroud, Player_1, TRIG - Intro - Reveal Shroud - REVEAL)</p>
+<p>命令字: MAP_UNDO_REVEAL_PERMANENTLY_AT_WAYPOINT<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Reveal map at waypoint – undo permanently.<br>地编编号: 219<br>脚本描述:<br>参数: ~ is undone.<br>参数类型: String<br>示例: (REVEAL - WP - Obj - Island A Shroud Reveal)</p>
+<p>命令字: MAP_UNDO_REVEAL_PERMANENTLY_IN_TRIGGER<br>地编条目: Map&#x2F;Fog or Reveal&#x2F;Reveal map in polytrigger – undo permanently.<br>地编编号: 422<br>脚本描述:<br>参数: ~ is undone.<br>参数类型: String<br>示例: (TRIG - Intro - Reveal Shroud - REVEAL)</p>
+<p>命令字: EVA_SET_ENABLED_DISABLED<br>地编条目: Media&#x2F;Audio&#x2F;EVA&#x2F;Enable or Disable EVA.<br>地编编号: 221<br>脚本描述:<br>参数: et EVA to be enabled ~ (False to disable.)<br>参数类型: Int32<br>示例: (1)</p>
+<p>命令字: OPTIONS_SET_OCCLUSION_MODE<br>地编条目: Cinematics&#x2F;Settings&#x2F;Enable or Disable Occlusion (Drawing Behind Buildings).<br>地编编号: 222<br>脚本描述:<br>参数: et Occlusion to be enabled ~ (False to disable.)<br>参数类型: Int32<br>示例: (1)</p>
+<p>命令字: UNIT_AFFECT_OBJECT_PANEL_FLAGS<br>地编条目: Object Type&#x2F;Settings&#x2F;Change Object flags.<br>地编编号: 226<br>脚本描述:<br>参数: ~ changes the value of ~ to ~.<br>参数类型: String, String, Int32<br>示例: (CSK, Indestructible, 1)</p>
+<p>命令字: TEAM_AFFECT_OBJECT_PANEL_FLAGS<br>地编条目: Team&#x2F;Settings&#x2F;Change Object flags - all.<br>地编编号: 227<br>脚本描述:<br>参数: ~ change the value of ~ to ~.<br>参数类型: String, String, Int32<br>示例: (TEAM - Vindicators, Enabled, 1)</p>
+<p>命令字: NAMED_FACE_NAMED<br>地编条目: Object Type&#x2F;Move&#x2F;Face another unit.<br>地编编号: 230<br>脚本描述:<br>参数: ~ begin facing<br>参数类型: String, String<br>示例: (IGuardian, PPlant Sell)</p>
+<p>命令字: NAMED_FACE_WAYPOINT<br>地编条目: Object Type&#x2F;Move&#x2F;Face a waypoint.<br>地编编号: 231<br>脚本描述:<br>参数: ~ begin facing<br>参数类型: String, String<br>示例: (UNIT - Tanya, WP - End Cine - Tanya Face)</p>
+<p>命令字: TEAM_FACE_NAMED<br>地编条目: Team&#x2F;Move&#x2F;Face another unit.<br>地编编号: 232<br>脚本描述:<br>参数: ~ begin facing<br>参数类型: String, String<br>示例: (IntroUnits&#x2F;teamIntroUnits, Gen1)</p>
+<p>命令字: TEAM_FACE_WAYPOINT<br>地编条目: Team&#x2F;Move&#x2F;Face a waypoint.<br>地编编号: 233<br>脚本描述:<br>参数: ~ begin facing<br>参数类型: String, String<br>示例: (Player_1&#x2F;teamPlayer_1, WP - Objective_2_1)</p>
+<p>命令字: LOCALDEFEAT<br>地编条目: Win &amp; Loss&#x2F;Announce local defeat.<br>地编编号: 223<br>脚本描述:<br>参数: how ‘Game Over’ window<br>参数类型:<br>示例: ()</p>
+<p>命令字: VICTORY<br>地编条目: Win &amp; Loss&#x2F;Announce victory.<br>地编编号: 3<br>脚本描述:<br>参数: how ‘Victorious’ window and end game<br>参数类型:<br>示例: ()</p>
+<p>命令字: DEFEAT<br>地编条目: Win &amp; Loss&#x2F;Announce defeat.<br>地编编号: 4<br>脚本描述:<br>参数: how ‘Defeated’ window and end game<br>参数类型:<br>示例: ()</p>
+<p>命令字: CAMERA_BLOOM_EFFECT_BEGIN<br>地编条目: Cinematics&#x2F;Lighting&#x2F;Begin bloom lighting effect.<br>地编编号: 258<br>脚本描述:<br>参数: et Bloom Filter to be enabled<br>参数类型:<br>示例: ()</p>
+<p>命令字: TEAM_GIVE_EXPERIENCE_POINTS<br>地编条目: Team&#x2F;Experience&#x2F;Gives the team experience points.<br>地编编号: 266<br>脚本描述:<br>参数: ives ~ experience points ~.<br>参数类型: String, Int32<br>示例: (????, 10000)</p>
+<p>命令字: TEAM_SET_EXPERIENCE_POINTS<br>地编条目: Team&#x2F;Experience&#x2F;Sets the team’s experience points.<br>地编编号: 267<br>脚本描述:<br>参数: ets ~ experience points’ to ~.<br>参数类型: String, Int32<br>示例: (TEAM - West Base Defense 2, 6000)</p>
+<p>命令字: UNIT_GIVE_EXPERIENCE_POINTS<br>地编条目: Object Type&#x2F;Experience&#x2F;Gives a named object experience points.<br>地编编号: 269<br>脚本描述:<br>参数: ives ~ experience points ~.<br>参数类型: String, Int32<br>示例: (UNIT - Soviet Commando, 99999)</p>
+<p>命令字: TEAM_SET_PLAYERS_NEAREST_UNIT_OF_TYPE_TO_REFERENCE<br>地编条目: Scripting&#x2F;Reference&#x2F;Set a reference to an object nearest-to-team, owned by player.<br>地编编号: 352<br>脚本描述:<br>参数: ind an object matching a type in the list ~ nearest the ~ (and owned by the teams Player) and set its reference to<br>参数类型: String, String, String<br>示例: (japanantiinfantryvehicle, Player_1&#x2F;teamPlayer_1, ref_tengu_p1)</p>
+<p>命令字: TEAM_MOVE_TO_NEAREST_OBJECT_OF_TYPE<br>地编条目: Team&#x2F;Move&#x2F;Team will move to the nearest object that matches type specified.<br>地编编号: 289<br>脚本描述:<br>参数: ~ will move to the nearest object of type ~.<br>参数类型: String, String<br>示例: (Team-AntiCryoCopter, alliedlimo1)</p>
+<p>命令字: COUNTER_MATH_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Counter do math opertation with another Counter.<br>地编编号: 291<br>脚本描述:<br>参数: ounter ~ , ~ with counter<br>参数类型: String, Int32, String<br>示例: (c_transports_left, 1, c_transports_arrived)</p>
+<p>命令字: COUNTER_MATH_VALUE<br>地编条目: Scripting&#x2F;Counters&#x2F;Counter do math opertation with value.<br>地编编号: 292<br>脚本描述:<br>参数: ounter ~ , ~ with value<br>参数类型: String, Int32, Int32<br>示例: (Allied02 - Counter - Phase 2 - Bombers - Inf Count, 2, 75)</p>
+<p>命令字: TEAM_UPGRADE<br>地编条目: Team&#x2F;Upgrades&#x2F;Give Team the specified upgrade<br>地编编号: 299<br>脚本描述:<br>参数: ive Team ~ the upgrade ~.<br>参数类型: String, String<br>示例: (TEAM - Wave 1 - MCVs, upgrade_j05_easy)</p>
+<p>命令字: SET_PLAYER_MONEY_TO_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set players money to counter.<br>地编编号: 300<br>脚本描述:<br>参数: tore amount of  ~ money to the counter<br>参数类型: String, String<br>示例: (Player_1, COUNTER - P1 Money)</p>
+<p>命令字: SET_UNIT_HEALTH_PERCENTAGE_TO_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set unit’s health as percentage to counter.<br>地编编号: 489<br>脚本描述:<br>参数: tore ~’s health as percentage to the counter<br>参数类型: String, String<br>示例: (STRUCTURE - Objective_4_1, Objectives - COUNTER - Objective 4 Structs HP 1)</p>
+<p>命令字: SET_PLAYER_KILLS_OF_TYPE_TO_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set number of player kills of a type to counter.<br>地编编号: 315<br>脚本描述: Now takes an object type or type list instead of just an object type.  Total amount will reflect the total number of units killed by type or by the entirety of the list.<br>参数: tore the amount of kills by ~ of the type of object(s) ~ to<br>参数类型: String, String, String<br>示例: (Player_1, japanodessaspecialtransportvehicle, c_transports_killed_player_1)</p>
+<p>命令字: SET_PLAYER_KILLS_OF_KINDOF_TO_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set number of player kills of a kindof to counter.<br>地编编号: 316<br>脚本描述:<br>参数: tore the amount of kills by ~ of the ~ to<br>参数类型: String, Int32, String<br>示例: (Player_1, 5, ????1)</p>
+<p>命令字: SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER<br>地编条目: Scripting&#x2F;Counters&#x2F;Set number of object types owned by player to counter.<br>地编编号: 317<br>脚本描述:<br>参数: tore the number of ~ owned by ~ to<br>参数类型: String, String, String<br>示例: (alliedantivehicleinfantry, Player_1, COUTNER - Javelins Trained)</p>
+<p>命令字: SET_PLAYER_OWNERSHIP_OF_TYPE_COUNTER_INCLUDE_DEAD<br>地编条目: Scripting&#x2F;Counters&#x2F;Set number of object types owned by player to a counter including dead ones.<br>地编编号: 394<br>脚本描述:<br>参数: tore the number of objects (include dead ones)~ owned by ~ to<br>参数类型: String, String, String<br>示例: (_object list_japan all units, Player_1, Allied01 - COUNTER - P1 Unit Count)</p>
+<p>命令字: ALLOW_DISALLOW_ONE_BUILDING<br>地编条目: Player&#x2F;Build&#x2F;Allow or Disallow one building of a specific type<br>地编编号: 283<br>脚本描述:<br>参数: ~ allowed to build ~ is ~.<br>参数类型: String, String, Int32<br>示例: (Player_1, japanantivehicleinfantry, 1)</p>
+<p>命令字: ALLOW_DISALLOW_ONE_UPGRADE<br>地编条目: Player&#x2F;Upgrades and Sciences&#x2F;Allow or Disallow one upgrade<br>地编编号: 535<br>脚本描述:<br>参数: ~ allowed to build ~ is ~.<br>参数类型: String, String, Int32<br>示例: (Player_1, upgrade_japannavalyardtech3, 1)</p>
+<p>命令字: NAMED_RECEIVE_UPGRADE<br>地编条目: Object Type&#x2F;Settings&#x2F;Give upgrade to named object.<br>地编编号: 201<br>脚本描述:<br>参数: ive ~ to ~.<br>参数类型: String, String<br>示例: (upgrade_riptidelocomotormodifier, UNIT - Transport 01)</p>
+<p>命令字: NAMED_REMOVE_UPGRADE<br>地编条目: Object Type&#x2F;Settings&#x2F;Remove upgrade from named object.<br>地编编号: 502<br>脚本描述:<br>参数: emove ~ from ~.<br>参数类型: String, String<br>示例: (upgrade_riptidelocomotormodifier, UNIT - Transport 01)</p>
+<p>命令字: SET_REF_TO_NEREST_TEAM_OF_TYPE_OWNED_BY_PLAYER<br>地编条目: Scripting&#x2F;Reference&#x2F;Set reference to object type of player nearest team.<br>地编编号: 370<br>脚本描述:<br>参数: ind ~ Owned by ~ nearest ~ and reference as<br>参数类型: String, String, String, String<br>示例: (alliedwarfactory, Player_1, Player_2&#x2F;teamPlayer_2, UNIT - Player 1 - War Factory)</p>
+<p>命令字: SET_REF_TO_NEREST_TEAM_OF_UNNAMED_TYPE_OWNED_BY_PLAYER<br>地编条目: Scripting&#x2F;Reference&#x2F;Set reference to unnamed object owned by player<br>地编编号: 371<br>脚本描述:<br>参数: ind unnamed ~ Owned by ~ nearest ~ and reference as<br>参数类型: String, String, String, String<br>示例: (alliedwarfactory, Player_1, Player_1&#x2F;teamPlayer_1, UNIT - Player 1 - War Factory)</p>
+<p>命令字: UNIT_TELEPORT_TO_WAYPOINT<br>地编条目: Object Type&#x2F;Move&#x2F;Teleport named object to waypoint.<br>地编编号: 378<br>脚本描述:<br>参数: eleport ~ to ~.<br>参数类型: String, String<br>示例: (CSK C, SL)</p>
+<p>命令字: TEAM_TELEPORT_TO_WAYPOINT<br>地编条目: Team&#x2F;Move&#x2F;Teleport team to waypoint.<br>地编编号: 379<br>脚本描述:<br>参数: eleport ~ to ~.<br>参数类型: String, String<br>示例: (TEAM - P1 Carry Over, WP - Japan01 - Left Overs Hang out)</p>
+<p>命令字: SELECT_OBJECT<br>地编条目: Tutorial&#x2F;Player selects object.<br>地编编号: 381<br>脚本描述:<br>参数: or ~ select object<br>参数类型: String, String<br>示例: (Player_1, UNIT - Commando)</p>
+<p>命令字: DESELECT<br>地编条目: Tutorial&#x2F;Deselects everything.<br>地编编号: 382<br>脚本描述:<br>参数: eselects everything<br>参数类型:<br>示例: ()</p>
+<p>命令字: LOCK_CAMERA_SCROLL<br>地编条目: Tutorial&#x2F;Lock or unlock camera scroll.<br>地编编号: 435<br>脚本描述:<br>参数: et the camera scroll lock to ~ .<br>参数类型: Int32<br>示例: (1)</p>
+<p>命令字: UNIT_ENABLE_HOUSE_COLOR<br>地编条目: Object Type&#x2F;Settings&#x2F;Enables or disables the house color<br>地编编号: 388<br>脚本描述:<br>参数: nable house color for ~ to ~ .<br>参数类型: String, Int32<br>示例: (Player02 - Mirage Tank 1, 1)</p>
+<p>命令字: TEAM_ENABLE_HOUSE_COLOR<br>地编条目: Team&#x2F;Settings&#x2F;Enables or disables the house color<br>地编编号: 389<br>脚本描述:<br>参数: nable the house color for ~ to ~ .<br>参数类型: String, Int32<br>示例: (TEAM - P1 - Refineries, 1)</p>
+<p>命令字: SELL_OBJECT<br>地编条目: Object Type&#x2F;Damage or Remove&#x2F;Sell off named Object.<br>地编编号: 54<br>脚本描述: This script will attempt to sell the named object regardless who it belongs to even if the player is a human.  Also, it should only be called on sellable objects.  Be careful!<br>参数: ell off<br>参数类型: String<br>示例: (UNIT - Soviet AA Gun 01)</p>
+<p>命令字: PLAYER_SELL_EVERYTHING<br>地编条目: Player&#x2F;Remove, Sell, or Transfer All&#x2F;Player sells everything.<br>地编编号: 55<br>脚本描述: This script will attempt to sell all of a players structures, even if the player is a human.  Be careful!<br>参数: ell everything belonging to<br>参数类型: String<br>示例: (Japan06)</p>
+<p>命令字: SHOW_MISSION_OBJECTIVE<br>地编条目: Unused or Obsolete&#x2F;Interface&#x2F;Objectives&#x2F;Show mission objective<br>地编编号: 403<br>脚本描述:<br>参数: ake mission objective ‘~’ visible.<br>参数类型: String<br>示例: (A08_Objective_1)</p>
+<p>命令字: LINK_MISSION_OBJECTIVE_TO_OBJECT<br>地编条目: Interface&#x2F;Objectives&#x2F;Link mission objective to object<br>地编编号: 405<br>脚本描述:<br>参数: et mission objective ‘~’ linked to ~ to ~.<br>参数类型: String, String, Int32<br>示例: (RW1, VIP YS1, 1)</p>
+<p>命令字: LINK_MISSION_OBJECTIVE_TO_OBJECT_WITH_CATEGORY<br>地编条目: Interface&#x2F;Objectives&#x2F;Link mission objective to object using icon<br>地编编号: 553<br>脚本描述: Links an objective to an object and specifies a particular icon type to display.<br>参数: et mission objective ‘~’ linked to ~ to ~ using icon ~.<br>参数类型: String, String, Int32, String<br>示例: (RW01, CH1, 1, Attack)</p>
+<p>命令字: LINK_MISSION_OBJECTIVE_TO_WAYPOINT_WITH_CATEGORY<br>地编条目: Interface&#x2F;Objectives&#x2F;Link mission objective to waypoint using icon<br>地编编号: 552<br>脚本描述: Links an objective to a waypoint and specifies a particular icon type to display.<br>参数: et mission objective ‘~’ linked to ~ to ~ using icon ~.<br>参数类型: String, String, Int32, String<br>示例: (RW1, RW1, 1, Move)</p>
+<p>命令字: MARK_MISSION_OBJECTIVE_NOT_COMPLETED<br>地编条目: Interface&#x2F;Objectives&#x2F;Mark mission objective as not completed<br>地编编号: 408<br>脚本描述:<br>参数: ark mission objective ‘~’ as not completed.<br>参数类型: String<br>示例: (J07_Bonus_Destroy_Soviets)</p>
+<p>命令字: SET_MISSION_OBJECTIVE_STATUS<br>地编条目: Interface&#x2F;Objectives&#x2F;Set mission objective status<br>地编编号: 492<br>脚本描述:<br>参数: et status of mission objective ‘~’ to ~.<br>参数类型: String, Int32<br>示例: (RW1, 1)</p>
+<p>命令字: UNIT_CHANGE_OBJECT_STATUS<br>地编条目: Object Type&#x2F;Settings&#x2F;Change object status.<br>地编编号: 411<br>脚本描述:<br>参数: or ~ set ~ to ~.<br>参数类型: String, Int32, Int32<br>示例: (NS HB MCV1, 3, 1)</p>
+<p>命令字: TEAM_CHANGE_OBJECT_STATUS<br>地编条目: Team&#x2F;Settings&#x2F;Change object status.<br>地编编号: 412<br>脚本描述: .<br>参数: or all units in ~ set ~ to ~.<br>参数类型: String, Int32, Int32<br>示例: (PlyrNeutral&#x2F;TEAM - Boats 01, 199, 1)</p>
+<p>命令字: PLAYER_AI_CHANGEBASEBUILDER<br>地编条目: SkirmishAI&#x2F;Turn on or off AI Base Builder.<br>地编编号: 442<br>脚本描述:<br>参数: urn AI Base Builder for ~<br>参数类型: String, Int32<br>示例: (Player_2, 1)</p>
+<p>命令字: PLAYER_AI_CHANGEUNITBUILDER<br>地编条目: SkirmishAI&#x2F;Turn on or off AI Unit Builder.<br>地编编号: 443<br>脚本描述:<br>参数: urn AI Unit Builder for ~<br>参数类型: String, Int32<br>示例: (Player_2, 1)</p>
+<p>命令字: PLAYER_AI_CHANGETEAMBUILDER<br>地编条目: SkirmishAI&#x2F;Turn on or off AI Party Builder.<br>地编编号: 444<br>脚本描述:<br>参数: urn AI Party Builder for ~<br>参数类型: String, Int32<br>示例: (Player_2, 1)</p>
+<p>命令字: PLAYER_AI_CHANGE_ECONOMY_MANAGER<br>地编条目: SkirmishAI&#x2F;Turn on or off AI Economy Manager.<br>地编编号: 445<br>脚本描述:<br>参数: urn AI Economy Builder for ~<br>参数类型: String, Int32<br>示例: (Player_2, 1)</p>
+<p>命令字: PLAYER_AI_CHANGESCIENCEUPGRADER<br>地编条目: SkirmishAI&#x2F;Turn on or off AI Science Upgrader.<br>地编编号: 448<br>脚本描述:<br>参数: urn AI Science Upgrader for ~<br>参数类型: String, Int32<br>示例: (Player_2, 1)</p>
+<p>命令字: TEAM_AI_TRANSFER<br>地编条目: SkirmishAI&#x2F;Transfer control of Team to or from Skirmish AI.<br>地编编号: 450<br>脚本描述:<br>参数: nsure you have needed components of Skirmish AI turned on.<br>参数类型: String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, 1)</p>
+<p>命令字: UNIT_AI_TRANSFER<br>地编条目: SkirmishAI&#x2F;Transfer control of Unit to or from Skirmish AI.<br>地编编号: 451<br>脚本描述:<br>参数: nsure you have needed components of Skirmish AI turned on.<br>参数类型: String, Int32<br>示例: (UNIT - Wave 03 - Stingray 01, 1)</p>
+<p>命令字: UNIT_AI_TRANSFER_ALL<br>地编条目: SkirmishAI&#x2F;Transfer control of all player’s units to or from Skirmish AI – Enable Skirmish AI.<br>地编编号: 452<br>脚本描述:  starting opening moves and timers.<br>参数: ransfers control of all players objects to or from the Skirmish AI, it also starts the AI timers and opening moves(turns Skirmish AI On, if transferring to the Skirmish AI). Ensure you have needed components of Ski<br>rmish AI turned on in the player list.<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: SKIRMISH_AI_TRANSFER_ALL<br>地编条目: SkirmishAI&#x2F;Transfer ownership of all player’s units to or from Skirmish AI – Don’t Enable Skirmish AI.<br>地编编号: 529<br>脚本描述:  without starting opening moves and timers.<br>参数: ransfers control of all a players units to or from the Skirmish AI, note it does not start its timers or opening moves (doesn’t turn the AI on if transferring to the AI).<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: SKIRMISH_AI_START<br>地编条目: SkirmishAI&#x2F;Start AI Opening moves and timers(Turn on the Skirmish AI).<br>地编编号: 530<br>脚本描述:<br>参数: nits that have been transferred to the SkirmishAI will now start executing their opening moves and timers.  Ensure you have needed components of Skirmish AI turned on in the player list.<br>参数类型: String<br>示例: (Player_1)</p>
+<p>命令字: SKIRMISH_AI_SET_ENEMY_PLAYER_PRIORITY<br>地编条目: SkirmishAI&#x2F;Enemy Target Control&#x2F;Set enemy player priority<br>地编编号: 515<br>脚本描述:  a target priority of<br>参数: I’s target heuristics will always choose a higher-priority enemy’s stuff over a lower-priority enemy’s stuff, if possible. Priority of zero means the target heuristics will never consider that enemy.<br>参数类型: String, String, Int32<br>示例: (Player_1, Soviet_1, 30)</p>
+<p>命令字: SKIRMISH_AI_CLEAR_ENEMY_PLAYER_PRIORITY<br>地编条目: SkirmishAI&#x2F;Enemy Target Control&#x2F;Clear enemy player priority<br>地编编号: 516<br>脚本描述: : Does not target enemy player<br>参数: I’s target heuristics will will never target this enemy’s objects.<br>参数类型: String, String<br>示例: (Player_2, Japan05_Shinzo)</p>
+<p>命令字: SKIRMISH_AI_SET_ALL_ENEMY_PLAYERS_PRIORITIES<br>地编条目: SkirmishAI&#x2F;Enemy Target Control&#x2F;Set all enemy players’ priority<br>地编编号: 517<br>脚本描述: : Give all enemy players a target priority of<br>参数: I’s target heuristics will always choose a higher-priority enemy’s stuff over a lower-priority enemy’s stuff, if possible. Priority of zero means the target heuristics will never consider that enemy.<br>参数类型: String, Int32<br>示例: (Soviet02, 10)</p>
+<p>命令字: SKIRMISH_AI_CLEAR_ALL_ENEMY_PLAYERS_PRIORITIES<br>地编条目: SkirmishAI&#x2F;Enemy Target Control&#x2F;Clear all enemy players’ priority<br>地编编号: 518<br>脚本描述: : Does not target any enemy player.<br>参数: I’s target heuristics will not target any enemies until ‘Set enemy player priority’ is called<br>参数类型: String<br>示例: (Player_2)</p>
+<p>命令字: SKIRMISH_AI_USE_AUTOMATIC_ENEMY_PLAYER_PRIORITY_SCHEME<br>地编条目: SkirmishAI&#x2F;Enemy Target Control&#x2F;Use automatic enemy player prioritization scheme<br>地编编号: 519<br>脚本描述: : Choose enemy players automatically using<br>参数: I automatically prioritizes enemy players using the given scheme<br>参数类型: String, String<br>示例: (Player_2, NearestFirst_AllowTies)</p>
+<p>命令字: SKIRMISH_AI_CONSIDER_ALL_ENEMIES_WHEN_BUILDING<br>地编条目: SkirmishAI&#x2F;Build Control&#x2F;Consider all enemies when deciding what to build<br>地编编号: 525<br>脚本描述: : Considers all enemies’ units when deciding what the best or worst unit to build is.<br>参数: I considers the units owned by the all its enemies equally when evaluating BEST_UNIT_EXPECTED, BEST_UNIT_WEIGHTED, WORST_UNIT, FACTORY, and base defense build heuristics. This is the default behavior.<br>参数类型: String<br>示例: (Soviet03)</p>
+<p>命令字: UNIT_CONTEXT_SENSITIVE_ATTACK<br>地编条目: Object Type&#x2F;Attack&#x2F;Set named object to capture a named object.<br>地编编号: 458<br>脚本描述:  begin context-sensitive attack on<br>参数: his script should be used to tell Engineer and Infiltration type units to capture&#x2F;infiltrate another object.<br>参数类型: String, String<br>示例: (WWJ1, WWJ1)</p>
+<p>命令字: TEAM_CONTEXT_SENSITIVE_ATTACK<br>地编条目: Team&#x2F;Attack&#x2F;Set team to capture a named object.<br>地编编号: 488<br>脚本描述:  begin context-sensitive attack on<br>参数: his script should be used to tell a team of Engineer’s and&#x2F;or Infiltration type units to capture&#x2F;infiltrate another object.<br>参数类型: String, String<br>示例: (Player_3&#x2F;JIANG J, SYS)</p>
+<p>命令字: SKIRMISH_AI_SET_FAVORED_ENEMY<br>地编条目: SkirmishAI&#x2F;Enemy Target Control&#x2F;Set Skirmish AI favored enemy<br>地编编号: 459<br>脚本描述:  to<br>参数: ets the given enemy’s priority to 10, and everyone else’s priority to 0<br>参数类型: String, String<br>示例: (Japan01, Player_1)</p>
+<p>命令字: SKIRMISH_AI_USE_REBUILD_SYSTEM<br>地编条目: SkirmishAI&#x2F;Use Skirmish AI Structure Rebuilds<br>地编编号: 460<br>脚本描述:<br>参数: se structure rebuilds for ~:<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: SKIRMISH_AI_USE_REPAIRS<br>地编条目: SkirmishAI&#x2F;Skirmish AI may repair buildings<br>地编编号: 481<br>脚本描述:<br>参数: se structure repair for ~:<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: PLAYER_ALLOW_AI_AUTOACQUIRE<br>地编条目: SkirmishAI&#x2F;Allow AI Auto-Acquire for Player.<br>地编编号: 461<br>脚本描述:<br>参数: se AI AutoAcquire for ~:<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: TEAM_ALLOW_AI_AUTOACQUIRE<br>地编条目: SkirmishAI&#x2F;Allow AI Auto-Acquire for team.<br>地编编号: 462<br>脚本描述:<br>参数: se AI AutoAcquire for ~:<br>参数类型: String, Int32<br>示例: (Soviet_1&#x2F;TEAM - Intro Infantry 01, 1)</p>
+<p>命令字: UNIT_ALLOW_AI_AUTOACQUIRE<br>地编条目: SkirmishAI&#x2F;Allow AI Auto-Acquire for named object.<br>地编编号: 463<br>脚本描述:<br>参数: se AI AutoAcquire for ~:<br>参数类型: String, Int32<br>示例: (UNIT - Wave 03 - Stingray 01, 1)</p>
+<p>命令字: PLAYER_SPECIAL_POWER_AVAILABILITY<br>地编条目: Player&#x2F;Special Power&#x2F;Set special power availability.<br>地编编号: 470<br>脚本描述: This script will prevent a player from casting a player power, even if it’s not locked.<br>参数: ~ set ~ availability to ~.<br>参数类型: String, String, String<br>示例: (Soviet_1, specialpower_roar, Disabled)</p>
+<p>命令字: PLAYER_LOCK_PLAYER_TECH<br>地编条目: Player&#x2F;Special Power&#x2F;Lock or Unlock a player tech.<br>地编编号: 534<br>脚本描述:<br>参数: ~ set ~ locked to ~.<br>参数类型: String, String, Int32<br>示例: (Player_1, PlayerTech_Allied_TimeBomb_Rank2, 1)</p>
+<p>命令字: PLAYER_SET_MAX_PLAYER_POWER_POINTS<br>地编条目: Player&#x2F;Special Power&#x2F;Set maximum player power points.<br>地编编号: 533<br>脚本描述:<br>参数: ~ set maximum power points to ~.<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: PLAYER_SET_PLAYER_POWER_POINTS<br>地编条目: Player&#x2F;Special Power&#x2F;Set the players current power point total.<br>地编编号: 548<br>脚本描述: Sets the current total of points for this player.  Note you cannot set this value to be greater than the maximum amount of points set via script or below 0.<br>参数: ~ set power points to ~.<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: PLAYER_UNIT_TYPE_SPECIAL_POWER_IGNORE_REQUIREMENTS<br>地编条目: Player&#x2F;Special Power&#x2F;Player’s object’s special power ignores requirements.<br>地编编号: 471<br>脚本描述:<br>参数: he ~ for ~ owned by ~ ignores requirements: ~.<br>参数类型: String, String, String, Int32<br>示例: (specialpower_pointdefensedrones, _object list_japan all units, Japan03_Emperor, 1)</p>
+<p>命令字: SKIRMISH_AI_MAKE_BASE<br>地编条目: SkirmishAI&#x2F;Create a skirmish AI base<br>地编编号: 472<br>脚本描述:<br>参数: layer ~ has a base at ~.<br>参数类型: String, String<br>示例: (Player_1, Player_2_Start)</p>
+<p>命令字: UNIT_SET_STANCE<br>地编条目: Object Type&#x2F;Settings&#x2F;Sets a unit’s current stance<br>地编编号: 473<br>脚本描述:<br>参数: ets ~ stance to ~.<br>参数类型: String, Int32<br>示例: (FAN HUI1, 2)</p>
+<p>命令字: TEAM_SET_STANCE<br>地编条目: Team&#x2F;Settings&#x2F;Set a Team’s current stance<br>地编编号: 537<br>脚本描述:<br>参数: ets ~ stance to ~.<br>参数类型: String, Int32<br>示例: (Player_3&#x2F;JIANG J, 1)</p>
+<p>命令字: DISPLAY_TUTORIAL_TEXT<br>地编条目: Tutorial&#x2F;Display tutorial text<br>地编编号: 474<br>脚本描述:<br>参数: how tutorial text:<br>参数类型: String<br>示例: (SCRIPT:A08_HINTS_Objective_1)</p>
+<p>命令字: HIDE_TUTORIAL_TEXT<br>地编条目: Tutorial&#x2F;Hide tutorial text<br>地编编号: 475<br>脚本描述:<br>参数: ide the tutorial text.<br>参数类型:<br>示例: ()</p>
+<p>命令字: FLASH_MOUSE_HUD_FIXED_ELEMENT<br>地编条目: Tutorial&#x2F;Flash PC HUD fixed element<br>地编编号: 476<br>脚本描述:<br>参数: et flash PC HUD fixed element ~ to ~.<br>参数类型: String, Int32<br>示例: (UnitIntroButton, 1)</p>
+<p>命令字: FLASH_JOYPAD_HUD_FIXED_ELEMENT<br>地编条目: Tutorial&#x2F;Flash console HUD fixed element<br>地编编号: 559<br>脚本描述:<br>参数: et flash console HUD fixed element ~ to ~.<br>参数类型: String, Int32<br>示例: (ControllerButtonX, 1)</p>
+<p>命令字: FLASH_UI_UNIT_ABILITY_BUTTON<br>地编条目: Tutorial&#x2F;Flash named object’s UI user ability button<br>地编编号: 478<br>脚本描述:<br>参数: or ~ set flash UI user ability button ~ to ~.<br>参数类型: String, String, Int32<br>示例: (UNIT - Tanya, Command_TimeBeltSpecialPower, 1)</p>
+<p>命令字: FLASH_UI_BUILD_BUTTON<br>地编条目: Tutorial&#x2F;Flash UI build button<br>地编编号: 479<br>脚本描述:<br>参数: et flash UI build ‘~’ button to ~.<br>参数类型: String, Int32<br>示例: (alliedantivehicleinfantry, 1)</p>
+<p>命令字: FLASH_JOYPAD_COMMANDBAR_BUTTON<br>地编条目: Tutorial&#x2F;Flash console command menu button<br>地编编号: 557<br>脚本描述:<br>参数: et flash console command menu button ~ to ~.<br>参数类型: String, Int32<br>示例: (buttonaiholdobjectdirective, 1)</p>
+<p>命令字: DISABLE_MOUSE_HUD_FIXED_ELEMENT<br>地编条目: Tutorial&#x2F;Disable PC HUD fixed element<br>地编编号: 482<br>脚本描述:<br>参数: et disable PC HUD fixed element ~ to ~.<br>参数类型: String, Int32<br>示例: (SellButton, 1)</p>
+<p>命令字: DISABLE_UI_UNIT_ABILITY_BUTTON<br>地编条目: Tutorial&#x2F;Disable named object’s UI user ability button<br>地编编号: 484<br>脚本描述:<br>参数: or ~ set disable UI user ability button ~ to ~.<br>参数类型: String, String, Int32<br>示例: (????1, Command_AlliedAntiInfantryVehicleEvacuate, 1)</p>
+<p>命令字: DISABLE_UI_BUILD_BUTTON<br>地编条目: Tutorial&#x2F;Disable UI build button<br>地编编号: 485<br>脚本描述:<br>参数: et disable UI build ‘~’ button to ~.<br>参数类型: String, Int32<br>示例: (alliedpowerplant, 1)</p>
+<p>命令字: DISABLE_JOYPAD_COMMANDBAR_BUTTON<br>地编条目: Tutorial&#x2F;Disable console command menu button<br>地编编号: 558<br>脚本描述:<br>参数: et disable console command menu button ~ to ~.<br>参数类型: String, Int32<br>示例: (buttonaiassaultdirective, 1)</p>
+<p>命令字: UNIT_SET_HEALTH<br>地编条目: Object Type&#x2F;Damage or Remove&#x2F;Set the health of the unit (in percentage).<br>地编编号: 486<br>脚本描述:<br>参数: et health of ~ to percentage (0.0 - 100.0)<br>参数类型: String, Double<br>示例: (UNIT - Coastal Gun 01, 100)</p>
+<p>命令字: NAMED_SET_MAX_HEALTH<br>地编条目: Object Type&#x2F;Settings&#x2F;Set the max health of a unit.<br>地编编号: 551<br>脚本描述: Sets the maximum health of a unit to the value specified and optionally sets the units current health to this value as well. (Note if setting the max health lower than the current health the current health will<br>automatically be set to max.<br>参数: et health of ~ to ~ set current health to max<br>参数类型: String, Int32, Int32<br>示例: (UNIT - Tanya, 4250, 1)</p>
+<p>命令字: PLAYER_SET_BASE_POWER<br>地编条目: Player&#x2F;Power&#x2F;Set the base power for the player.<br>地编编号: 487<br>脚本描述:<br>参数: et base power for ~ to<br>参数类型: String, Int32<br>示例: (Player_2, 10000)</p>
+<p>命令字: UNIT_KILL_ALL_IN_AREA<br>地编条目: Object Type&#x2F;Damage or Remove&#x2F;Kill all units belonging to the specified player in the specified area.<br>地编编号: 500<br>脚本描述:<br>参数: ill all units belonging to ~ in ~.<br>参数类型: String, String<br>示例: (Player_2, SL)</p>
+<p>命令字: LINK_MISSION_HOT_SPOT_TO_OBJECT<br>地编条目: Interface&#x2F;Mission Hot-Spot&#x2F;Link mission hot-spot to object<br>地编编号: 506<br>脚本描述:<br>参数: et mission hot-spot ~ linked to object ~ to ~.<br>参数类型: String, String, Int32<br>示例: (A05-HotSpot01-DestroyGenerator1, Struct-Japan04-Island1Generator01, 1)</p>
+<p>命令字: LINK_MISSION_HOT_SPOT_TO_WAYPOINT<br>地编条目: Interface&#x2F;Mission Hot-Spot&#x2F;Link mission hot-spot to waypoint<br>地编编号: 507<br>脚本描述:<br>参数: et mission hot-spot ~ linked to waypoint ~ to ~.<br>参数类型: String, String, Int32<br>示例: (RW1, RW1, 1)</p>
+<p>命令字: SET_MISSION_HOT_SPOT_VISIBILITY<br>地编条目: Interface&#x2F;Mission Hot-Spot&#x2F;Set visibility of mission hot-spot<br>地编编号: 508<br>脚本描述:<br>参数: et visibility of mission hot-spot ~ to ~.<br>参数类型: String, Int32<br>示例: (RW1, 1)</p>
+<p>命令字: SET_MISSION_HOT_SPOT_ACTIVENESS<br>地编条目: Interface&#x2F;Mission Hot-Spot&#x2F;Set mission hot-spot to be active or inactive<br>地编编号: 514<br>脚本描述:<br>参数: et ‘active’ status of mission hot-spot ~ to ~.<br>参数类型: String, Int32<br>示例: (S03_Hotspot_1_ClearIsland, 1)</p>
+<p>命令字: FADE_OUT_TO_BLACK<br>地编条目: Interface&#x2F;Fade&#x2F;Fade-out to black<br>地编编号: 510<br>脚本描述:<br>参数: ade-out the entire screen to black in ~ seconds.<br>参数类型: Double<br>示例: (2)</p>
+<p>命令字: FADE_IN_FROM_BLACK<br>地编条目: Interface&#x2F;Fade&#x2F;Fade-in from black<br>地编编号: 511<br>脚本描述:<br>参数: ade-in the entire screen from black in ~ seconds.<br>参数类型: Double<br>示例: (2)</p>
+<p>命令字: REDALERT_DISABLE_THREAT_LEVEL_BONUS<br>地编条目: Player&#x2F;Red Alerts&#x2F;Disable Threat Level Bonus<br>地编编号: 521<br>脚本描述:  threat level bonus.<br>参数: his will disable the attribute modifiers associated with each area of the red alert system(yellow, orange, red).  Currently these give modifiers to this players objects experience gain.<br>参数类型: String<br>示例: (Player_1)</p>
+<p>命令字: SET_COOP_AI_COMMAND_UI_ENABLED<br>地编条目: Interface&#x2F;Enable or disable the co-op AI command panel<br>地编编号: 522<br>脚本描述:<br>参数: et the enabled status of the co-op AI command panel to<br>参数类型: Int32<br>示例: (1)</p>
+<p>命令字: UNIT_SPAWN_NAMED_OBJECT_ON_TEAM_AT_NAMED_OBJECT_LOCATION<br>地编条目: Object Type&#x2F;Spawn&#x2F;Spawn – named object on Team at a named object’s position.<br>地编编号: 527<br>脚本描述:<br>参数: pawn ~ of type ~ on ~ at named object ~ .<br>参数类型: String, String, String, String<br>示例: (UNIT - Bonus Crate, moneycrate, PlyrCivilian&#x2F;teamPlyrCivilian, UNIT - King Oni 01)</p>
+<p>命令字: PLAYER_GRANT_SPECIAL_POWER<br>地编条目: Player&#x2F;Special Power&#x2F;Grant power to player.<br>地编编号: 528<br>脚本描述: This will grant a power to the player, it will grant whatever tech level it needs to access the power.<br>参数: rant ~to player<br>参数类型: String, String<br>示例: (specialpowertimebomblvl3, Player_1)</p>
+<p>命令字: NAMED_SHOW_INFOBOX<br>地编条目: Interface&#x2F;Info Box&#x2F;Show Info Box<br>地编编号: 538<br>脚本描述: Displays an info box over the top of the named object.  Optionally the 4th parameter takes a string of an image id to display an image.  If the image is found it will display this image in the info box.  Note t<br>hat a time of 0 will result in a never ending info box that will only be removed when the script Remove Info Box is used on the unit.<br>参数: ~ Show info box text ~ for ~ seconds.  Display Image from button<br>参数类型: String, String, Double, String<br>示例: (UNIT - P1 - Peacekeeper 01, SCRIPT:A01_INFO_Peacekeeper, 20, Allied_UnitIntro)</p>
+<p>命令字: NAMED_REMOVE_INFOBOX<br>地编条目: Interface&#x2F;Info Box&#x2F;Remove Info Box<br>地编编号: 539<br>脚本描述: Removes…..wait for it….  The info box on this unit.<br>参数: ~ remove info box<br>参数类型: String<br>示例: (UNIT_P1 - Commando)</p>
+<p>命令字: PLAYER_TOGGLE_RESOURCE_SHARING<br>地编条目: Player&#x2F;Money&#x2F;Toggle allied resource sharing on-off.<br>地编编号: 540<br>脚本描述: Toggles resource sharing for this player on&#x2F;off.  When on this player will share all gathered resources with it’s allies.<br>参数: ~ turn resource sharing:<br>参数类型: String, Int32<br>示例: (Player_1, 1)</p>
+<p>命令字: TEAM_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT<br>地编条目: Team&#x2F;Move&#x2F;Set team to follow a waypoint path starting at waypoint.<br>地编编号: 541<br>脚本描述: Please note that this script will allow you to specify a Waypoint to start on but doesn’t check if that Waypoint is part of the path you specified.  Please be careful with this.<br>参数: ave ~ follow ~ , as a team is ~ , in formation is ~ , starting at waypoint<br>参数类型: String, String, Int32, Int32, String<br>示例: (Allied_01&#x2F;TEAM - Allied01 - Intro, WPP - Intro - UnitPath, 1, 1, WP - Intro - UnitPath - A)</p>
+<p>命令字: NAMED_FOLLOW_WAYPOINTS_STARTING_AT_WAYPOINT<br>地编条目: Object Type&#x2F;Move&#x2F;Named object follow a waypoint path starting at waypoint.<br>地编编号: 542<br>脚本描述: Please note that this script will allow you to specify a Waypoint to start on but doesn’t check if that Waypoint is part of the path you specified.  Please be careful with this.<br>参数: ~ follow ~ starting at<br>参数类型: String, String, String<br>示例: (UNIT - MCV 01, WPP - MCV 01 Final Destination, Waypoint 76)</p>
+<p>命令字: NAMED_FORCE_ATTACK_NAMED<br>地编条目: Object Type&#x2F;Attack&#x2F;Named Object force attack a named object.<br>地编编号: 549<br>脚本描述: Sets a named object to force attack another named object. Useful to make friendly units attack each other.<br>参数: ~ force attacks<br>参数类型: String, String<br>示例: (HZ MCV1, HZ MCV)</p>
+<p>命令字: NAMED_FORCE_ATTACK_WAYPOINT<br>地编条目: Object Type&#x2F;Attack&#x2F;Named Object force attack a waypoint.<br>地编编号: 550<br>脚本描述: Sets a named object to force attack a waypoint. Useful to make a unit bombard the ground at a particular location.<br>参数: ~ force attacks<br>参数类型: String, String<br>示例: (UNIT - Conscript 01, WP - Conscript 01 Fire At)</p>
+<p>命令字: CAMPAIGN_CREATE_AUTO_SAVE<br>地编条目: Campaign&#x2F;Create campaign auto save checkpoint.<br>地编编号: 554<br>脚本描述: Create a new auto save checkpoint with a description. This script will work both in single player with an AI buddy and in Co-Op.<br>参数: reate auto save checkpoint with description: ~.<br>参数类型: String<br>示例: (AUTOSAVE:ALLIESCAMPAIGN)</p>
+<p>命令字: PLAYER_SET_ALL_UNITS_TO_FLEE<br>地编条目: Player&#x2F;Retreat&#x2F;Set all units on player to flee off map.<br>地编编号: 562<br>脚本描述: Units that need to flee are required to have a RunOffMapBehavior in their object definition for the unit to be affected.  Any units without it will ignore this script.  The RunOffMapBehavior has two modes of operation one is to have the unit run to a waypoint specified in the behavior or go 1000 units in the direction the unit is currently facing, if it can’t path to either point the unit will kill itself.  Please be careful with this as some units may not be able to go to whatever exit point and will kill themselves at their current location.<br>参数: et ~ units to flee off map<br>参数类型: String<br>示例: (Japan06)</p>
+<p>命令字: PLAYER_ALLOWED_TOBE_COOPAI<br>地编条目: Interface&#x2F;Toggle CoOp AI interface.<br>地编编号: 567<br>脚本描述: Toggle the CoOp AI’s interface on and off.  It defaults to on.<br>参数: et ~ CoOp AI’s interface to<br>参数类型: String, Int32<br>示例: (Player_2, 1)</p>
+<p>命令字: PLACE_AI_BEACON_LOCATION<br>地编条目: SkirmishAI&#x2F;Beacon&#x2F;Spawn an AI Beacon at a waypoint.<br>地编编号: 571<br>脚本描述: Spawns an AI Beacon of a given type at a waypoint and informs the AI of it’s placement.<br>参数: ~ place beacon type: ~ at waypoint:<br>参数类型: String, String, String<br>示例: (Player_1, HoldPosition, HoldPosition)</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,qq,qzone,wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/04/03/%E8%84%9A%E6%9C%AC%E5%8A%A8%E4%BD%9C%E5%88%97%E8%A1%A8/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="脚本动作列表">
+                        
+                        <span class="card-title">脚本动作列表</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            物wu
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/03/%E8%84%9A%E6%9C%AC%E6%9D%A1%E4%BB%B6%E5%88%97%E8%A1%A8/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="脚本条件列表">
+                        
+                        <span class="card-title">脚本条件列表</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            物wu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <a href="/about" target="_blank">物wu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

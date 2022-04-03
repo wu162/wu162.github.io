@@ -1,0 +1,891 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="脚本条件列表, 日冕地图制作器">
+    <meta name="description" content="命令字: COUNTER地编条目: Scripting&amp;#x2F;Counter compared to a value.地编编号: 1脚本描述:参数: ounter ~ IS ~参数类型: String, Int32, Int32示例: ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>脚本条件列表 | 日冕地图制作器</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">日冕地图制作器</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">日冕地图制作器</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">脚本条件列表</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>命令字: COUNTER<br>地编条目: Scripting&#x2F;Counter compared to a value.<br>地编编号: 1<br>脚本描述:<br>参数: ounter ~ IS ~<br>参数类型: String, Int32, Int32<br>示例: (Player_1&#x2F;COUTNER - Trigger Loss Video, 2, 1)</p>
+<p>命令字: COUNTER_SECONDS<br>地编条目: Scripting&#x2F;Counter compared to time in seconds.<br>地编编号: 82<br>脚本描述:<br>参数: ounter ~ IS ~ time ~ secs.<br>参数类型: String, Int32, Double<br>示例: (KT, 2, 98)</p>
+<p>命令字: COUNTER_COUNTER<br>地编条目: Scripting&#x2F;Counter compared to another Counter.<br>地编编号: 81<br>脚本描述:<br>参数: ounter ~ IS ~ counter<br>参数类型: String, Int32, String<br>示例: (c_alt_transport_existing, 5, c_alt_transport_total)</p>
+<p>命令字: UNIT_HEALTH<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object’s health % compared to a value.<br>地编编号: 46<br>脚本描述: Compares the unit’s current health relative to the initial health (which may be modified in World Builder) to the value.<br>参数: ~ health is ~ ~ percent.<br>参数类型: String, Int32, Int32<br>示例: (UNIT - Civ Building 01, 1, 50)</p>
+<p>命令字: FLAG<br>地编条目: Scripting&#x2F;Flag compared to a value.<br>地编编号: 2<br>脚本描述:<br>参数: ~ is<br>参数类型: String, Int32<br>示例: (FLAG - Intro Bomber 01 Evacuated, 1)</p>
+<p>命令字: CONDITION_TRUE<br>地编条目: Scripting&#x2F;True.<br>地编编号: 3<br>脚本描述:<br>参数: rue.<br>参数类型:<br>示例: ()</p>
+<p>命令字: TIMER_EXPIRED<br>地编条目: Scripting&#x2F;Timer expired.<br>地编编号: 4<br>脚本描述:<br>参数: imer ~ has expired.<br>参数类型: String<br>示例: (TIMER - Trigger Autosave 01)</p>
+<p>命令字: TEAM_INSIDE_AREA_PARTIALLY<br>地编条目: Team&#x2F;Area or Path&#x2F;Team has units in an area.<br>地编编号: 5<br>脚本描述:<br>参数: ~ has one or more units in ~ (~).<br>参数类型: String, String, Int32<br>示例: (TEAM - Japanese Fleet Wave 1, AREA - J2 FLEET - hunt enable, 7)</p>
+<p>命令字: TEAM_DESTROYED<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team is destroyed.<br>地编编号: 6<br>脚本描述: This condition is only true for the single logic frame when the team dies.<br>参数: ~ has been destroyed.<br>参数类型: String<br>示例: (XT)</p>
+<p>命令字: TEAM_HAS_FEWER_THAN_X_UNITS_WITH_KINDOF<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team has fewer than X units left of KindOf.<br>地编编号: 115<br>脚本描述:<br>参数: ~ has fewer than ~ units left of type ~.<br>参数类型: String, Int32, Int32<br>示例: (AIState_A08_LandDefense_StaticDefense_0_0, 12, 5)</p>
+<p>命令字: NAMED_DESTROYED<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object is destroyed.<br>地编编号: 11<br>脚本描述: This will return true if the unit is dead or does not exist.  It will also return true if the unit doesn<br>参数: ~ has been destroyed.<br>参数类型: String<br>示例: (VIP YS1)</p>
+<p>命令字: NAMED_DYING<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object is dying. (Cinematic)<br>地编编号: 47<br>脚本描述: Returns true if the unit is currently dead, if the unit doesn<br>参数: ~ has been killed, but is still on screen.<br>参数类型: String<br>示例: (STRUC_Civ - FutureTech HQ - A 1)</p>
+<p>命令字: NAMED_NOT_DESTROYED<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object exists and is alive.<br>地编编号: 12<br>脚本描述: This checks to see if the object exists on the level, and is not effectively dead.  This means it will fire if the unit is around and not dead, a unit in its slow death will cause this to return false.<br>参数: ~ exists and is alive.<br>参数类型: String<br>示例: (UNIT - Conscript 01)</p>
+<p>命令字: TEAM_HAS_UNITS<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team has units.<br>地编编号: 8<br>脚本描述:<br>参数: ~ has one or more units.<br>参数类型: String<br>示例: (Soviet02&#x2F;Hind_EnRoute_A)</p>
+<p>命令字: CAMERA_SCROLL_DISTANCE<br>地编条目: Tutorial&#x2F;Camera&#x2F;Camera scroll distance.<br>地编编号: 129<br>脚本描述:<br>参数: layer has scrolled camera ~ units.<br>参数类型: Double<br>示例: (1500)</p>
+<p>命令字: CAMERA_ROTATE_DISTANCE<br>地编条目: Tutorial&#x2F;Camera&#x2F;Camera rotate distance.<br>地编编号: 130<br>脚本描述:<br>参数: layer has rotated camera ~ degrees.<br>参数类型: Double<br>示例: (360)</p>
+<p>命令字: CAMERA_ZOOM_DISTANCE<br>地编条目: Tutorial&#x2F;Camera&#x2F;Camera zoom distance.<br>地编编号: 131<br>脚本描述:<br>参数: layer has zoomed camera ~ units.<br>参数类型: Double<br>示例: (200)</p>
+<p>命令字: NAMED_INSIDE_AREA<br>地编条目: Object Type&#x2F;Area or Path&#x2F;Named object is inside an area.<br>地编编号: 9<br>脚本描述:<br>参数: ~ is inside<br>参数类型: String, String<br>示例: (YJ DD, YJ DD)</p>
+<p>命令字: NAMED_OUTSIDE_AREA<br>地编条目: Object Type&#x2F;Area or Path&#x2F;Named object is outside an area.<br>地编编号: 10<br>脚本描述:<br>参数: ~ is outside<br>参数类型: String, String<br>示例: (o_executioner, area_north)</p>
+<p>命令字: TEAM_INSIDE_AREA_ENTIRELY<br>地编条目: Team&#x2F;Area or Path&#x2F;Team is completely inside an area.<br>地编编号: 13<br>脚本描述:<br>参数: ~ is all inside ~ (~).<br>参数类型: String, String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, area_hinds_delete, 3)</p>
+<p>命令字: NAMED_ATTACKED_BY_OBJECTTYPE<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object is attacked by a specific object type.<br>地编编号: 15<br>脚本描述:<br>参数: ~ has been attacked by a(n)<br>参数类型: String, String<br>示例: (UNIT_P1 - Spy - A, sovietscoutinfantry)</p>
+<p>命令字: TEAM_ATTACKED_BY_OBJECTTYPE<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team is attacked by a specific object type.<br>地编编号: 16<br>脚本描述:<br>参数: ~ has been attacked by a(n)<br>参数类型: String, String<br>示例: (Soviet02&#x2F;Entrance_Walls, japanmechaking)</p>
+<p>命令字: TEAM_COMPARE_NUM_MEMBERS<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team has (comparison) number of objects.<br>地编编号: 148<br>脚本描述: Compares the number of objects in a team to the passed in comparison values.  Note that this script does not count dead, under construction, projectiles, or units with the IGNORE_FOR_VICTORY kind of.<br>参数: ~ has~ ~ members.<br>参数类型: String, Int32, Int32<br>示例: (Allies02&#x2F;Bridge_02, 3, 1)</p>
+<p>命令字: NAMED_ATTACKED_BY_PLAYER<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object has been attacked by Player.<br>地编编号: 17<br>脚本描述:<br>参数: ~ has been attacked by<br>参数类型: String, String<br>示例: (RW3 WC1, Player_2)</p>
+<p>命令字: TEAM_ATTACKED_BY_PLAYER<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team has been attacked by Player.<br>地编编号: 18<br>脚本描述:<br>参数: ~ has been attacked by<br>参数类型: String, String<br>示例: (Player_2&#x2F;MCV1, Player_1)</p>
+<p>命令字: BUILT_BY_PLAYER<br>地编条目: Player&#x2F;Owns&#x2F;Player has built an object type.<br>地编编号: 19<br>脚本描述:<br>参数: ~ has been built by<br>参数类型: String, String<br>示例: (alliedwarfactory, Player_1)</p>
+<p>命令字: TEAM_CREATED<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Team has been created.<br>地编编号: 21<br>脚本描述:<br>参数: ~ has been created.<br>参数类型: String<br>示例: (TEAM - Tatsu Fleet)</p>
+<p>命令字: PLAYER_HAS_CREDITS<br>地编条目: Player&#x2F;Owns&#x2F;Player has (comparison) number of credits.<br>地编编号: 22<br>脚本描述:<br>参数: ~ has ~ ~ credits.<br>参数类型: String, Int32, Int32<br>示例: (Player_1, 1, 1500)</p>
+<p>命令字: NAMED_DISCOVERED<br>地编条目: Player&#x2F;Sighted&#x2F;Player has sighted named object.<br>地编编号: 23<br>脚本描述:<br>参数: ~ has seen<br>参数类型: String, String<br>示例: (Player_1, UNIT - Japan06 - BD Egg 3)</p>
+<p>命令字: NAMED_BUILDING_IS_EMPTY<br>地编条目: Object Type&#x2F;Garrisoned&#x2F;A specific building is empty.<br>地编编号: 58<br>脚本描述:<br>参数: ~ is empty.<br>参数类型: String<br>示例: (STRUCTURE - Garrison 01)</p>
+<p>命令字: ENEMY_SIGHTED<br>地编条目: Object Type&#x2F;Sighted&#x2F;Unit has sighted a friendly, neutral, or enemy unit belonging to Player.<br>地编编号: 45<br>脚本描述:<br>参数: ~ sees a(n) ~ unit belonging to ~.<br>参数类型: String, String, String<br>示例: (UNIT_P1 - Spy - A, Enemy, Soviet05)</p>
+<p>命令字: ENEMY_SIGHTED_BY_TEAM<br>地编条目: Team&#x2F;Sighted&#x2F;Team has sighted a friendly, neutral, or enemy unit belonging to Player.<br>地编编号: 95<br>脚本描述:<br>参数: ~ sees a(n) ~ unit belonging to ~.<br>参数类型: String, String, String<br>示例: (Soviet01&#x2F;TEAM - Soviet 01 Patrol 01, Enemy, Player_1)</p>
+<p>命令字: TYPE_SIGHTED<br>地编条目: Object Type&#x2F;Sighted&#x2F;Named object has sighted a type of object belonging to Player.<br>地编编号: 57<br>脚本描述:<br>参数: ~ sees a(n) ~ belonging to ~.<br>参数类型: String, String, String<br>示例: (UNIT_P1 - Spy - A, sovietantiinfantryinfantry, Soviet01)</p>
+<p>命令字: TEAM_DISCOVERED<br>地编条目: Player&#x2F;Sighted&#x2F;Player has sighted Team.<br>地编编号: 24<br>脚本描述:<br>参数: ~ has seen ~.<br>参数类型: String, String<br>示例: (Player_1, Soviet03&#x2F;TEAM_S3 - Bonus Objectives)</p>
+<p>命令字: NAMED_OWNED_BY_PLAYER<br>地编条目: Player&#x2F;Owns&#x2F;Player owns Unit.<br>地编编号: 25<br>脚本描述:<br>参数: ~ owns ~.<br>参数类型: String, String<br>示例: (Player_1, QIAN SHAO ZHAN)</p>
+<p>命令字: PLAYER_HAS_POWER<br>地编条目: Player&#x2F;Power&#x2F;Player’s base currently has power.<br>地编编号: 27<br>脚本描述:<br>参数: ~ buildings are powered.<br>参数类型: String<br>示例: (Japan_05_Gen1)</p>
+<p>命令字: PLAYER_HAS_NO_POWER<br>地编条目: Player&#x2F;Power&#x2F;Player’s base currently has no power.<br>地编编号: 40<br>脚本描述:<br>参数: ~ buildings are not powered.<br>参数类型: String<br>示例: (Soviet_3)</p>
+<p>命令字: NAMED_REACHED_WAYPOINTS_END<br>地编条目: Object Type&#x2F;Area or Path&#x2F;Named object has reached the end of a specific waypoint path. (Unreliable)<br>地编编号: 28<br>脚本描述:<br>参数: ~ has reached the end of<br>参数类型: String, String<br>示例: (IGuardian, GuardianEntry)</p>
+<p>命令字: NAMED_SELECTED<br>地编条目: Object Type&#x2F;Selected&#x2F;Named object is currently selected.<br>地编编号: 30<br>脚本描述:<br>参数: ~ is currently selected.<br>参数类型: String<br>示例: (Unit-Soviet05-RescueBoat)</p>
+<p>命令字: TYPE_SELECTED<br>地编条目: Object Type&#x2F;Selected&#x2F;Object Type is currently selected.<br>地编编号: 135<br>脚本描述:<br>参数: ~ is currently selected.<br>参数类型: String<br>示例: (alliedbasedefenseadvanced)</p>
+<p>命令字: NAMED_EXITED_AREA<br>地编条目: Object Type&#x2F;Area or Path&#x2F;Named object exits an area.<br>地编编号: 32<br>脚本描述:<br>参数: ~ exits<br>参数类型: String, String<br>示例: (UNIT_P1 - Spy - A, TRIG - Entering Water)</p>
+<p>命令字: HAS_FINISHED_VIDEO<br>地编条目: Movie&#x2F;Movie in the radar has completed playing.<br>地编编号: 41<br>脚本描述:<br>参数: ovie ~ has completed playing.<br>参数类型: String<br>示例: (A01TH01)</p>
+<p>命令字: HAS_FINISHED_AUDIO<br>地编条目: Audio&#x2F;Sound has completed playing.<br>地编编号: 43<br>脚本描述:<br>参数: ~ has completed playing.<br>参数类型: String<br>示例: (MA01_AlliedIntel40)</p>
+<p>命令字: PLAYER_TRIGGERED_SPECIAL_POWER<br>地编条目: Player&#x2F;Special Power&#x2F;Player starts using a special power.<br>地编编号: 50<br>脚本描述:<br>参数: ~ starts using ~.<br>参数类型: String, String<br>示例: (Player_1, specialpower_bribe)</p>
+<p>命令字: PLAYER_TRIGGERED_SPECIAL_POWER_FROM_NAMED<br>地编条目: Player&#x2F;Special Power&#x2F;Player start using a special power from a named object.<br>地编编号: 52<br>脚本描述:<br>参数: ~ starts using ~ from ~.<br>参数类型: String, String, String<br>示例: (Player_1, specialpower_timebelt, UNIT_P1 - Commando)</p>
+<p>命令字: PLAYER_DESTROYED_N_BUILDINGS_PLAYER<br>地编条目: Player&#x2F;Attacked or Destroyed&#x2F;Player destroyed N or more of an opponent’s buildings.<br>地编编号: 54<br>脚本描述:<br>参数: ~ has destroyed ~ or more buildings owned by ~.<br>参数类型: String, Int32, String<br>示例: (Player_1, 1, Soviet02)</p>
+<p>命令字: PLAYER_HAS_OBJECT_COMPARISON<br>地编条目: Player&#x2F;Owns&#x2F;Player has (comparison) object type.<br>地编编号: 49<br>脚本描述:<br>参数: ~ has ~ ~ object of type ~.<br>参数类型: String, Int32, Int32, String<br>示例: (Soviet_1, 1, 6, sovietbomberaircraft)</p>
+<p>命令字: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA<br>地编条目: Player&#x2F;Area&#x2F;Player has (comparison) object type in an area.<br>地编编号: 55<br>脚本描述:<br>参数: ~ has ~ ~ object of type ~ in the ~.<br>参数类型: String, Int32, Int32, String, String<br>示例: (Player_1, 3, 8, alliedantiinfantryvehicle, XS)</p>
+<p>命令字: PLAYER_HAS_COMPARISON_UNIT_TYPE_IN_TRIGGER_AREA_COMPLETELY_BUILT<br>地编条目: Player&#x2F;Area&#x2F;Player has (comparison) completely built unit types in an area.<br>地编编号: 128<br>脚本描述:<br>参数: ~ has ~ ~ completely built objects of type ~ in the ~.<br>参数类型: String, Int32, Int32, String, String<br>示例: (Player_2, 3, 1, sovietoutpost, AT-Player2BuiltStructure)</p>
+<p>命令字: PLAYER_HAS_NUMBER_OBJECTS_WITH_MODELCONDITION<br>地编条目: Player&#x2F;Owns&#x2F;Player has (comparison) objects with a model condition.<br>地编编号: 107<br>脚本描述:<br>参数: ~ has ~ ~ objects with ~.<br>参数类型: String, Int32, Int32, String<br>示例: (Allies01, 3, 1, SUCKED_UP_HIGH)</p>
+<p>命令字: PLAYER_HAS_COMPARISON_UNIT_KIND_IN_TRIGGER_AREA<br>地编条目: Player&#x2F;Area&#x2F;Player has (comparison) object types with kindof in an area.<br>地编编号: 56<br>脚本描述:<br>参数: ~ has ~ ~ objects with ~ in the ~.<br>参数类型: String, Int32, Int32, Int32, String<br>示例: (Player_2, 3, 1, 246, AT-Player2BuiltStructure)</p>
+<p>命令字: SKIRMISH_SPECIAL_POWER_READY<br>地编条目: Player&#x2F;Special Power&#x2F;Player’s special power is ready to fire.<br>地编编号: 64<br>脚本描述:<br>参数: ~ is ready to fire ~.<br>参数类型: String, String<br>示例: (Player_1, specialpowernanoswarmhive)</p>
+<p>命令字: UNIT_HAS_OBJECT_STATUS<br>地编条目: Object Type&#x2F;Object Status&#x2F;Named object has object status.<br>地编编号: 59<br>脚本描述:<br>参数: ~ has<br>参数类型: String, Int32<br>示例: (UNIT - Civ Building 04, 164)</p>
+<p>命令字: UNIT_HAS_MODELCONDITION<br>地编条目: Object Type&#x2F;Settings&#x2F;Named object has model condition.<br>地编编号: 150<br>脚本描述:<br>参数: ~ has<br>参数类型: String, String<br>示例: (UNIT_P1 - Spy - A, DISGUISED)</p>
+<p>命令字: UNIT_USING_STANCE<br>地编条目: Object Type&#x2F;Stance&#x2F;Named object is using stance.<br>地编编号: 133<br>脚本描述:<br>参数: s ~ in the ~.<br>参数类型: String, Int32<br>示例: (GT1, 2)</p>
+<p>命令字: TEAM_ALL_HAS_OBJECT_STATUS<br>地编条目: Team&#x2F;Object Status&#x2F;Team has object status - all.<br>地编编号: 60<br>脚本描述:  (all applicable members).<br>参数: ~ has<br>参数类型: String, Int32<br>示例: (TEAM - Phase 3 - BObj1 - 1 Troops, 64)</p>
+<p>命令字: TEAM_SOME_HAVE_OBJECT_STATUS<br>地编条目: Team&#x2F;Object Status&#x2F;Team has object status - partial.<br>地编编号: 61<br>脚本描述:  (at least one member).<br>参数: ~ has<br>参数类型: String, Int32<br>示例: (Player_1&#x2F;teamPlayer_1, 163)</p>
+<p>命令字: SKIRMISH_PLAYER_HAS_COMPARISON_GARRISONED<br>地编条目: Player&#x2F;Garrisoned&#x2F;Player has (comparison) garrisoned buildings.<br>地编编号: 71<br>脚本描述:<br>参数: ~ has ~ ~ garrisoned buildings.<br>参数类型: String, Int32, Int32<br>示例: (Player_2, 3, 1)</p>
+<p>命令字: SKIRMISH_PLAYER_HAS_UNITS_IN_AREA<br>地编条目: Player&#x2F;Area&#x2F;Player has units in an area<br>地编编号: 72<br>脚本描述:<br>参数: ~ has units in ~.<br>参数类型: String, String<br>示例: (Player_1, JING G)</p>
+<p>命令字: SKIRMISH_PLAYER_HAS_BEEN_ATTACKED_BY_PLAYER<br>地编条目: Player&#x2F;Attacked or Destroyed&#x2F;Player has been attacked by Player.<br>地编编号: 73<br>脚本描述:<br>参数: ~ has been attacked by ~.<br>参数类型: String, String<br>示例: (Soviet06, Player_1)</p>
+<p>命令字: PLAYER_LOST_OBJECT_TYPE<br>地编条目: Player&#x2F;Owns&#x2F;Player has lost an object of type.<br>地编编号: 76<br>脚本描述:<br>参数: ~ has lost an object of type ~.<br>参数类型: String, String<br>示例: (Player_1, _object list_japan all structs)</p>
+<p>命令字: CAMERA_ENTERED_AREA<br>地编条目: Camera&#x2F;Camera entered trigger area.<br>地编编号: 94<br>脚本描述:<br>参数: amera enters ~.<br>参数类型: String<br>示例: (area_nw_statues)</p>
+<p>命令字: PLAYER_HAS_KILLED_TYPE_UNITS<br>地编条目: Player&#x2F;Attacked or Destroyed&#x2F;Player has destroyed N or more objects of type.<br>地编编号: 91<br>脚本描述:<br>参数: ~ has killed ~ or more ~.<br>参数类型: String, Int32, String<br>示例: (Allied04_PresidentBase, 18, _object list_allied all units)</p>
+<p>命令字: PLAYER_HAS_KILLED_NAMED_UNIT<br>地编条目: Player&#x2F;Attacked or Destroyed&#x2F;Player has killed Named Unit<br>地编编号: 147<br>脚本描述:<br>参数: ~ has killed object named:<br>参数类型: String, String<br>示例: (Player_1, Struct-FIFConYard)</p>
+<p>命令字: NAMED_DESTROYED_BY_OBJECTTYPE<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object is destroyed by a specific object type.<br>地编编号: 92<br>脚本描述:<br>参数: ~ has been destroyed by a(n)<br>参数类型: String, String<br>示例: (UNIT - King Oni 01, alliedcommandotech1)</p>
+<p>命令字: TEAM_CAN_PATH_TO_WAYPOINT<br>地编条目: Team&#x2F;Area or Path&#x2F;Team can path to waypoint.<br>地编编号: 101<br>脚本描述:<br>参数: he first unit of ~ can path to ~.<br>参数类型: String, String<br>示例: (Allies02&#x2F;Bridge_02, wp_jinzatsu_goto_p1)</p>
+<p>命令字: TEAM_IS_ATTACKED_AND_CANNOT_RETALIATE_ANY<br>地编条目: Team&#x2F;Attacked, Destroyed, or Exists&#x2F;Evaluate if any member of a team is being attacked but cannot retaliate<br>地编编号: 111<br>脚本描述:<br>参数: Evaluate if any team member of ~ is being attacked and cannot retaliate.<br>参数类型: String<br>示例: (TEAM - Objective 3)</p>
+<p>命令字: PLAYER_HAS_NUM_UNITS_WITH_UPGRADE<br>地编条目: Player&#x2F;Owns&#x2F;Num objects has specified upgrade.<br>地编编号: 121<br>脚本描述:<br>参数: Does ~ have ~ units that have ~.<br>参数类型: String, Int32, String<br>示例: (Player_1, 1, upgrade_alliedtech3)</p>
+<p>命令字: UNIT_HAS_UPGRADE<br>地编条目: Object Type&#x2F;Upgrades&#x2F;Unit has upgrade.<br>地编编号: 138<br>脚本描述:<br>参数: ~ has ~.<br>参数类型: String, String<br>示例: (????1, upgrade_alliedtech3)</p>
+<p>命令字: PLAYER_TRIGGERED_SCRIPT_EVENT<br>地编条目: Player&#x2F;Player has triggered game event<br>地编编号: 141<br>脚本描述:<br>参数: ~ has triggered ~.<br>参数类型: String, String<br>示例: (Player_1, ATTACK_MOVE_ISSUED)</p>
+<p>命令字: BUILDING_GARRISONNED_BY_OBJECT_TYPE<br>地编条目: Object Type&#x2F;Garrison&#x2F;Named building is garrisoned by object type owned by specific player.<br>地编编号: 142<br>脚本描述:<br>参数: ~ is garrisoned by object type ~ owned by ~.<br>参数类型: String, String, String<br>示例: (UNIT - Port Authority, alliedcommandotech1, Player_1)</p>
+<p>命令字: PLAYER_TRIGGERED_SPECIAL_POWER_IN_AREA<br>地编条目: Player&#x2F;Special Power&#x2F;Player starts using a special power in trigger area.<br>地编编号: 143<br>脚本描述:<br>参数: ~ starts using ~ in ~.<br>参数类型: String, String, String<br>示例: (Player_1, specialpowernanoswarmhive, area_relay_01)</p>
+<p>命令字: MISSION_HOT_SPOT_ACTIVE<br>地编条目: Interface&#x2F;Mission Hot-Spot&#x2F;Mission hot-spot has been activated.<br>地编编号: 144<br>脚本描述:<br>参数: Mission hot-spot ~ has been activated.<br>参数类型: String<br>示例: (RW1)</p>
+<p>命令字: PLAYER_IS_HUMAN_OR_AI_PERSONALITY<br>地编条目: Player&#x2F;Controlled By&#x2F;Is player controlled by human or AI Personality.<br>地编编号: 146<br>脚本描述:<br>参数: ~ is controlled by<br>参数类型: String, String<br>示例: (Player_3, Human)</p>
+<p>命令字: NAMED_HAS_KILLED_COMPARISON_UNIT_TYPE<br>地编条目: Object Type&#x2F;Attacked, Destroyed, or Exists&#x2F;Named object has killed (comparison) number of object type or type list.<br>地编编号: 149<br>脚本描述: Script will compare if a unit has killed (x) number of object type(s).<br>参数: ~ has killed  ~ ~<br>参数类型: String, Int32, Int32, String<br>示例: (UNIT - Natasha, 3, 1, japanantiinfantryinfantry)</p>
+<p>命令字: PLAYER_HAS_COMPARISON_POWER_POINTS<br>地编条目: Player&#x2F;Special Power&#x2F;Player has <comparison><n> power points.<br>地编编号: 151<br>脚本描述: Determines if a player has x amount of player power points.<br>参数: ~ has ~ ~ power points.<br>参数类型: String, Int32, Int32<br>示例: (Player_1, 3, 1)</p>
+<p>命令字: PLAYER_HAS_PLAYER_TECH<br>地编条目: Player&#x2F;Special Power&#x2F;Player has player tech.<br>地编编号: 153<br>脚本描述: Determines if a player has purchased a player tech.<br>参数: ~ has ~ player tech.<br>参数类型: String, String<br>示例: (Player_1, PlayerTech_Soviet_MagneticSatellite_Rank_1)</p>
+<p>命令字: UI_STATE_PROPOSITION_STATE<br>地编条目: Tutorial&#x2F;UI state proposition is true.<br>地编编号: 152<br>脚本描述: The condition is only guaranteed to work correctly in a tutorial game<br>参数: ~ is true.<br>参数类型: String<br>示例: (AdvancedCommandPanelIsOpen)</p>
+<p>命令字: CURRENT_PLATFORM<br>地编条目: Platform&#x2F;Is game running on platform.<br>地编编号: 154<br>脚本描述: Returns true if running on the chosen platform.  Current options are PC&#x2F;360&#x2F;PS3<br>参数: s game running on<br>参数类型: String<br>示例: (PC)</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,qq,qzone,wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/04/03/%E8%84%9A%E6%9C%AC%E5%8A%A8%E4%BD%9C%E5%88%97%E8%A1%A8/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="脚本动作列表">
+                        
+                        <span class="card-title">脚本动作列表</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            物wu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/04/03/%E5%9C%B0%E5%9B%BE%E5%88%B6%E4%BD%9C%E5%99%A8-%E9%9A%8F%E6%9C%BA%E5%88%B6%E4%BD%9C/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="地图制作器--随机制作">
+                        
+                        <span class="card-title">地图制作器--随机制作</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            物wu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <a href="/about" target="_blank">物wu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
