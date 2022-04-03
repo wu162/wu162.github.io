@@ -1,0 +1,1136 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="自定义地图制作教程, 日冕地图制作器">
+    <meta name="description" content="自定义地图制作教程地图生成器提供了利用自己写的lua脚本 和生成器提供的api, 从头生成生成一张地图的能力所使用的lua版本为5.3,
+
+更新日志详见 这里， 如果想用更新的测试版本，欢迎加q群 1013586495
+
+快速入门建议动手开">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>自定义地图制作教程 | 日冕地图制作器</title>
+    <link rel="icon" type="image/png" href="/mapcreator/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/mapcreator/libs/awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/mapcreator/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/mapcreator/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/mapcreator/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/mapcreator/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/mapcreator/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/mapcreator/css/my.css">
+
+    <script src="/mapcreator/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0"><link rel="stylesheet" href="/mapcreator/css/prism-tomorrow.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/mapcreator/" class="waves-effect waves-light">
+                    
+                    <img src="/mapcreator/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">日冕地图制作器</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/mapcreator/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/mapcreator/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/mapcreator/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/mapcreator/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">日冕地图制作器</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/mapcreator/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/mapcreator/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/mapcreator/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/mapcreator/medias/featureimages/7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">自定义地图制作教程</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/mapcreator/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-04-03
+                </div>
+                
+
+                
+
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="自定义地图制作教程"><a href="#自定义地图制作教程" class="headerlink" title="自定义地图制作教程"></a>自定义地图制作教程</h1><p>地图生成器提供了利用自己写的lua脚本 和生成器提供的api, 从头生成生成一张地图的能力<br>所使用的lua版本为5.3,</p>
+<blockquote>
+<p>更新日志详见 <a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DR0ZUV29IQXdCSmtX">这里</a>， 如果想用更新的测试版本，欢迎加q群 1013586495</p>
+</blockquote>
+<h2 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h2><p>建议动手开编辑器（任何一个能输入文字的编辑器，推荐vscode）跟随教程一起</p>
+<h3 id="你的第一张lua地图"><a href="#你的第一张lua地图" class="headerlink" title="你的第一张lua地图"></a>你的第一张lua地图</h3><p>生成器提供了map这一全局变量，map提供了生成地图所需要的一系列接口函数（能力），例如初始化地图大小和人数，设置水域，设置某个位置的高度，保存地图等</p>
+<p>首先，让我们来创建一张纯水域地图吧</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 初始化地图大小、人数</span>
+mapWidth <span class="token operator">=</span> <span class="token number">600</span>
+mapHeight <span class="token operator">=</span> <span class="token number">600</span>
+
+<span class="token comment" spellcheck="true">-- 创建地图必须先调用下面这个函数</span>
+map<span class="token punctuation">:</span><span class="token function">setup</span><span class="token punctuation">(</span>mapWidth<span class="token punctuation">,</span> mapHeight<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 初始化地图使用到的所有贴图</span>
+map<span class="token punctuation">:</span><span class="token function">initTextures</span><span class="token punctuation">(</span><span class="token string">"Dirt_Yucatan01"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii02"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii03"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii04"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Heidelberg05"</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 设置地图高度和贴图</span>
+<span class="token keyword">for</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mapWidth<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+    <span class="token keyword">for</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mapHeight<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+        <span class="token comment" spellcheck="true">-- 设置高度</span>
+        map<span class="token punctuation">:</span><span class="token function">setHeight</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">)</span>
+        <span class="token comment" spellcheck="true">-- 设置地表贴图</span>
+        map<span class="token punctuation">.</span><span class="token function">setTexture</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span><span class="token string">"Dirt_Yucatan01"</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+map<span class="token punctuation">:</span><span class="token function">setWaterHeight</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 设置玩家位置，第一个参数位玩家编号，范围1到6，后面两个参数为横纵坐标</span>
+map<span class="token punctuation">.</span><span class="token function">setPlayerPos</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span>
+map<span class="token punctuation">.</span><span class="token function">setPlayerPos</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 保存地图</span>
+map<span class="token punctuation">:</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>保存为<code>MyMap.lua</code>(文件名即地图名) ，然后打开地图生成器，选择<code>MyMap.lua</code>文件，点击右边的生成</p>
+<p>恭喜，你已经成功生成了一张自己的地图</p>
+<h3 id="添加地表贴图"><a href="#添加地表贴图" class="headerlink" title="添加地表贴图"></a>添加地表贴图</h3><p><a target="_blank" rel="noopener" href="https://note.youdao.com/s/NcBBkmIg">所有贴图完整列表</a></p>
+<p>为了添加地表贴图，需要先初始化地图所使用的的所有贴图列表</p>
+<pre class=" language-lua"><code class="language-lua">map<span class="token punctuation">:</span><span class="token function">initTextures</span><span class="token punctuation">(</span><span class="token string">"Dirt_Yucatan01"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii02"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii03"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii04"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Heidelberg05"</span><span class="token punctuation">)</span>
+</code></pre>
+<p>然后再给某个位置设置贴图，注意这里所使用的贴图必须是上面那个函数参数里的其中一个</p>
+<pre class=" language-lua"><code class="language-lua">map<span class="token punctuation">.</span><span class="token function">setTexture</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span><span class="token string">"Dirt_Yucatan01"</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="添加矿脉"><a href="#添加矿脉" class="headerlink" title="添加矿脉"></a>添加矿脉</h3><p>添加矿脉使用如下函数</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 前两个参数为位置，最后一个位角度（角度制）</span>
+map<span class="token punctuation">.</span><span class="token function">addOreNode</span><span class="token punctuation">(</span><span class="token number">440</span><span class="token punctuation">,</span> <span class="token number">280</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="添加斜坡"><a href="#添加斜坡" class="headerlink" title="添加斜坡"></a>添加斜坡</h3><p>添加斜坡使用如下函数</p>
+<blockquote>
+<p>目前这个函数有点问题，后面会修复</p>
+</blockquote>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 参数位，起始点横纵坐标，终点横纵坐标，斜坡宽度</span>
+map<span class="token punctuation">:</span><span class="token function">ramp</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">110</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span>
+</code></pre>
+<p>让我们利用已有的知识，创建一个圆岛地图</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 初始化地图大小、人数、名字</span>
+mapWidth <span class="token operator">=</span> <span class="token number">600</span>
+mapHeight <span class="token operator">=</span> <span class="token number">600</span>
+
+map<span class="token punctuation">:</span><span class="token function">setup</span><span class="token punctuation">(</span>mapWidth<span class="token punctuation">,</span> mapHeight<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">-- 初始化贴图数据</span>
+map<span class="token punctuation">:</span><span class="token function">initTextures</span><span class="token punctuation">(</span><span class="token string">"Dirt_Yucatan01"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii02"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii03"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Hawaii04"</span><span class="token punctuation">,</span> <span class="token string">"Grass_Heidelberg05"</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 设置地图基本高度（水底高度）</span>
+<span class="token keyword">for</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mapWidth<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+    <span class="token keyword">for</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mapHeight<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+        map<span class="token punctuation">:</span><span class="token function">setHeight</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span> <span class="token number">120</span><span class="token punctuation">)</span>
+        map<span class="token punctuation">.</span><span class="token function">setTexture</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span><span class="token string">"Dirt_Yucatan01"</span><span class="token punctuation">)</span>
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+<span class="token comment" spellcheck="true">-- 创建一个圆形的高度为210的陆地，圆心在地图中心</span>
+<span class="token keyword">for</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mapWidth<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+    <span class="token keyword">for</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> mapHeight<span class="token operator">-</span><span class="token number">1</span> <span class="token keyword">do</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>math<span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span> <span class="token punctuation">(</span>i <span class="token operator">-</span> mapWidth <span class="token operator">/</span><span class="token number">2</span> <span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>i <span class="token operator">-</span> mapWidth <span class="token operator">/</span><span class="token number">2</span> <span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>j <span class="token operator">-</span> mapHeight <span class="token operator">/</span><span class="token number">2</span> <span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>j <span class="token operator">-</span> mapHeight <span class="token operator">/</span><span class="token number">2</span> <span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">200</span> <span class="token punctuation">)</span> <span class="token keyword">then</span>
+            map<span class="token punctuation">:</span><span class="token function">setHeight</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span> <span class="token number">210</span><span class="token punctuation">)</span>
+            map<span class="token punctuation">.</span><span class="token function">setTexture</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span><span class="token string">"Grass_Hawaii02"</span><span class="token punctuation">)</span>
+        <span class="token keyword">end</span> 
+    <span class="token keyword">end</span>
+<span class="token keyword">end</span>
+
+map<span class="token punctuation">:</span><span class="token function">setWaterHeight</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 添加3个玩家</span>
+map<span class="token punctuation">.</span><span class="token function">setPlayerPos</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span>
+map<span class="token punctuation">.</span><span class="token function">setPlayerPos</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">400</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">)</span>
+map<span class="token punctuation">.</span><span class="token function">setPlayerPos</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 初始化随机数</span>
+math<span class="token punctuation">.</span><span class="token function">randomseed</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">-- 让随机数稍微启动一下</span>
+
+<span class="token comment" spellcheck="true">-- 利用随机数添加矿脉</span>
+<span class="token keyword">for</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span> <span class="token keyword">do</span>
+    map<span class="token punctuation">.</span><span class="token function">addOreNode</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">580</span><span class="token punctuation">)</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">580</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+
+<span class="token comment" spellcheck="true">-- 添加斜坡</span>
+map<span class="token punctuation">:</span><span class="token function">ramp</span><span class="token punctuation">(</span><span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">110</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 设置最大坡度（弧度制）</span>
+<span class="token comment" spellcheck="true">-- 如果地图中相邻两个位置的坡度超过这个角度，那么updatePassabilityAuto函数会把这里标记为不可通过</span>
+map<span class="token punctuation">:</span><span class="token function">seUnPassableAngle</span><span class="token punctuation">(</span>math<span class="token punctuation">.</span>pi <span class="token operator">/</span> <span class="token number">3</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 根据地图高度和自动更新地图可通过信息</span>
+<span class="token comment" spellcheck="true">-- 可通过信息（bool）决定了能否通过这个地方</span>
+map<span class="token punctuation">:</span><span class="token function">updatePassabilityAuto</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">-- 自动混合地表贴图（让贴图连接处更加自然）</span>
+map<span class="token punctuation">:</span><span class="token function">mixTextures</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 保存地图</span>
+map<span class="token punctuation">:</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="利用精准制作地图的能力"><a href="#利用精准制作地图的能力" class="headerlink" title="利用精准制作地图的能力"></a>利用精准制作地图的能力</h2><p>精准制作地图的教程参考<a target="_blank" rel="noopener" href="https://note.youdao.com/s/NaCYPM8l">这里</a><br>在lua里可以用通过调用函数运用此能力，函数如下</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 下面三个函数的参数都为文件路径</span>
+<span class="token comment" spellcheck="true">-- 导入RGB图</span>
+map<span class="token punctuation">:</span><span class="token function">loadImageTerrain</span><span class="token punctuation">(</span><span class="token string">"c:\\map\\myMap.png"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">-- 导入物体描述文件</span>
+map<span class="token punctuation">:</span><span class="token function">loadObjectList</span><span class="token punctuation">(</span><span class="token string">"objects.txt"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">-- 导入贴图颜色文件</span>
+map<span class="token punctuation">:</span><span class="token function">loadTextureColorMap</span><span class="token punctuation">(</span><span class="token string">"textureColor.txt"</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h2><p>为地图添加画面特效，函数如下</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 设置曝光特效，参数范围0.0 ~ 5.0</span>
+map<span class="token punctuation">:</span><span class="token function">setBloom</span><span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">-- 设置lookup特效，第一个参数为特效名字，第二个参数为特效值，范围0.0~ 5.0</span>
+<span class="token comment" spellcheck="true">-- 特效名字有以下几种 LUSaturateColors_Vol , LUShiftBlue_Vol , </span>
+<span class="token comment" spellcheck="true">-- LUSaturateColors_Vol</span>
+<span class="token comment" spellcheck="true">-- LUShiftBlue_Vol</span>
+<span class="token comment" spellcheck="true">-- BleachByPass_vol</span>
+<span class="token comment" spellcheck="true">-- LUGrayscale_Vol</span>
+map<span class="token punctuation">:</span><span class="token function">setLookupTable</span><span class="token punctuation">(</span><span class="token string">"LUSaturateColors_Vol"</span><span class="token punctuation">,</span> <span class="token number">0.</span>47f<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><p>地图生成器提供了完整的脚本生成能力，涉及到的脚本主要有3个</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- beginScript表明开始一个脚本</span>
+<span class="token comment" spellcheck="true">-- conditionAnd添加一个脚本条件</span>
+<span class="token comment" spellcheck="true">-- execute添加一个脚本动作（满足脚本条件则触发）</span>
+<span class="token comment" spellcheck="true">-- endScript表明结束当前脚本编辑</span>
+<span class="token comment" spellcheck="true">-- 下面这个脚本的作用是 设置玩家1的金钱50000</span>
+map<span class="token punctuation">:</span><span class="token function">beginScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">conditionAnd</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">,</span> <span class="token string">"PLAYER_SET_MONEY"</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_PlayerName<span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_Integer<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">endScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><code>conditionAnd</code>的第一个参数为条件类型，第二个参数为条件名字（条件类型和条件名字是一一对应的）<br><code>execute</code>的第一个参数为动作类型，第二个参数为动作名字（动作类型和动作名字是一一对应的）。之后的参数是可变长度的参数（这些参数必须用map:pair包裹起来）<br>map:pair的第一个参数为脚本参数类型（都以<code>arg_</code>开头），第二个为脚本参数值</p>
+<p>你可能要问，条件类型和参数类型有哪些，幸运的是，这个可以在地图编辑器中直接找到，如下图所示</p>
+<p><img src="/mapcreator/images/zidingyi_1.png"></p>
+<p>每个脚本项最后的那个数字就是动作（条件）类型</p>
+<p>参数类型则有以下这些</p>
+<pre class=" language-text"><code class="language-text">arg_Integer 
+arg_RealNumber 
+arg_ScriptName 
+arg_TeamName 
+arg_CounterName 
+arg_FlagName 
+arg_Comparison 
+arg_WaypointName 
+arg_Boolean 
+arg_TriggerAreaName 
+arg_Text
+arg_PlayerName
+arg_SoundName
+arg_SubroutineName
+arg_UnitName
+arg_ObjectName
+arg_PositionCoordinate
+arg_Angle
+arg_TeamState
+arg_Relation
+arg_AiMood
+arg_SpeechName
+arg_MusicName
+arg_MovieName
+arg_WaypointPathName
+arg_LocalizedStringName
+arg_BridgeName
+arg_UnitOrStructureKind
+arg_AttackPrioritySetName
+arg_RadarEventType
+arg_SpecialPowerName
+arg_ScienceName
+arg_UpgradeName
+arg_UnitAbilityName
+arg_BoundaryName
+arg_Buildability
+arg_SurfaceType
+arg_CameraShakeIntensity
+arg_CommandButtonName
+arg_FontName
+arg_ObjectStatus
+arg_TeamAbilityName
+arg_SkirmishApproachPath
+arg_Color
+arg_EmoticonName
+arg_ObjectPanelFlag
+arg_FactionName
+arg_ObjectTypeListName
+arg_MapRevealName
+arg_ScienceAvailabilityName
+arg_EvacuateContainerSide
+arg_Percentage
+arg_Percentage2
+arg_UnitReference
+arg_TeamReference
+arg_NearOrFar
+arg_MathOperator
+arg_ModelCondition
+arg_AudioName
+arg_ReverbRoomType
+arg_ObjectType
+arg_Hero
+arg_Emotion
+</code></pre>
+<p>至于条件名字和动作名字，目前正在寻找，会逐步给出</p>
+<p><strong>注意，生成脚本都是链式调用，以调用beginScript开头，以调用endScript结束</strong></p>
+<p>你可能会好奇，怎么没有看到设置脚本名字，这是因为生成器会自动为这个脚本赋予名字（每条脚本的名字都必须唯一），当然，你也可以自己设置名字<br>（方便其他地方引用），如下所示</p>
+<pre class=" language-lua"><code class="language-lua">map<span class="token punctuation">:</span><span class="token function">beginScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">"myFirstScript1"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">conditionAnd</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token number">128</span><span class="token punctuation">,</span> <span class="token string">"PLAYER_SET_MONEY"</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_PlayerName<span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_Integer<span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">endScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p>再来看看几个常用脚本</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 设置玩家1电力为60000</span>
+map<span class="token punctuation">:</span><span class="token function">beginScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">conditionAnd</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token number">487</span><span class="token punctuation">,</span> <span class="token string">"PLAYER_SET_BASE_POWER"</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_PlayerName<span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_Integer<span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">endScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+<span class="token comment" spellcheck="true">-- 禁止玩家1建造苏联真空内爆蛋</span>
+map<span class="token punctuation">:</span><span class="token function">beginScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">conditionAnd</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token number">283</span><span class="token punctuation">,</span> <span class="token string">"ALLOW_DISALLOW_ONE_BUILDING"</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_PlayerName<span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_ObjectName<span class="token punctuation">,</span> “SovietSuperWeaponAdvanced”<span class="token punctuation">)</span>
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_Boolean<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">endScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+map<span class="token punctuation">:</span><span class="token function">beginScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">conditionAnd</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"CONDITION_TRUE"</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">execute</span><span class="token punctuation">(</span><span class="token number">534</span><span class="token punctuation">,</span> <span class="token string">"PLAYER_LOCK_PLAYER_TECH"</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_PlayerName<span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_ObjectName<span class="token punctuation">,</span> “PlayerTech_Allied_TimeBomb_Rank1”<span class="token punctuation">)</span>
+        map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span>arg_Boolean<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">:</span><span class="token function">endScript</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<p><em>目前一些脚本支持还潜在一些错误，等待后续会逐步修正</em></p>
+<h2 id="队伍"><a href="#队伍" class="headerlink" title="队伍"></a>队伍</h2><p>地图生成器也支持队伍的创建，通过以下函数</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 添加一个队伍</span>
+<span class="token comment" spellcheck="true">-- 第一个参数为玩家名字，第二个参数为队伍名字（随意设置）</span>
+
+<span class="token comment" spellcheck="true">-- 给队伍添加一种单位类型（每个队伍最多7种）</span>
+map<span class="token punctuation">:</span><span class="token function">teamAdd</span><span class="token punctuation">(</span><span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"xunluo"</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">-- 第一个参数为玩家名字，第二个参数为队伍名字（随意设置），第三个参数为最小值，第四个参数为最大值，第五个参数为单位类型名称</span>
+map<span class="token punctuation">:</span><span class="token function">teamAddType</span><span class="token punctuation">(</span><span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"xunluo"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token string">"SovietMCV"</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">-- 设置单位微操</span>
+map<span class="token punctuation">:</span><span class="token function">teamSetMicroManager</span><span class="token punctuation">(</span><span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"xunluo"</span><span class="token punctuation">,</span> <span class="token string">"FearlessMicroManager"</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="路径点"><a href="#路径点" class="headerlink" title="路径点"></a>路径点</h2><p>地图生成器也支持路径点的创建，通过以下函数</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 前两个是横纵坐标，第三个是路径点名称（注意路径点名称必须唯一）</span>
+map<span class="token punctuation">:</span><span class="token function">addWaypoint</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token string">"luaPoint"</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="区域"><a href="#区域" class="headerlink" title="区域"></a>区域</h2><p>地图生成器也支持区域的创建，通过以下函数</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 第一个是区域名称（注意区域名称必须唯一），后面可变长度的区域顶点坐标（3个以上）</span>
+map<span class="token punctuation">:</span><span class="token function">addArea</span><span class="token punctuation">(</span><span class="token string">"myArea1"</span><span class="token punctuation">,</span> map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span> map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">)</span><span class="token punctuation">,</span> map<span class="token punctuation">:</span><span class="token function">pair</span><span class="token punctuation">(</span><span class="token number">400</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="小地图颜色控制"><a href="#小地图颜色控制" class="headerlink" title="小地图颜色控制"></a>小地图颜色控制</h2><p>为特定地表贴图设置对应的小地图颜色</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 第一个参数为贴图名称，后面三个分别为R, G, B值</span>
+map<span class="token punctuation">:</span><span class="token function">setTextureColor</span><span class="token punctuation">(</span><span class="token string">"Grass_Hawaii02"</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span><span class="token number">255</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="添加物体"><a href="#添加物体" class="headerlink" title="添加物体"></a>添加物体</h2><p><a target="_blank" rel="noopener" href="https://note.youdao.com/s/Zjw54Ufv">所有物体名称列表</a><br>通过以下函数添加属于某个玩家的某个队伍的物体</p>
+<pre class=" language-lua"><code class="language-lua"><span class="token comment" spellcheck="true">-- 在(300, 300)这个位置添加属于玩家1的苏联MCV，并且命名叫luaMCV</span>
+map<span class="token punctuation">:</span><span class="token function">addObject</span><span class="token punctuation">(</span><span class="token string">"SovietMCV"</span><span class="token punctuation">,</span> <span class="token string">"Player_1"</span><span class="token punctuation">,</span> <span class="token string">"teamPlayer_1"</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">,</span> <span class="token number">300</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span>pi <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">"luaMCV"</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="地图默认设定"><a href="#地图默认设定" class="headerlink" title="地图默认设定"></a>地图默认设定</h2><p>地图中合法的玩家名称为</p>
+<pre class=" language-text"><code class="language-text">"Player_1",
+"Player_2",
+"Player_3",
+"Player_4",
+"Player_5",
+"Player_6",
+"PlyrCivilian",
+"PlyrNeutral"
+</code></pre>
+<p>其中前6个才是玩家可操控的，后面2个是中立玩家（如果一个物体属于中立玩家，那么这个物体就是中立的）</p>
+<p>每个玩家名称都有默认的队伍，如下</p>
+<pre class=" language-text"><code class="language-text">Player_1的默认队伍为teamPlayer_1
+Player_2的默认队伍为teamPlayer_2
+Player_3的默认队伍为teamPlayer_3
+Player_4的默认队伍为teamPlayer_4
+Player_5的默认队伍为teamPlayer_5
+Player_6的默认队伍为teamPlayer_6
+PlyrCivilian的默认队伍为teamPlyrCivilian
+PlyrNeutral的默认队伍为teamPlyrNeutral
+</code></pre>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p><code>void setup(int width, int height, int playerCount)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;初始化地图</p>
+<p><code>void setHeight(int x, int y, float value)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;设置某个位置的高度</p>
+<p><code>public float getHeight(int x, int y)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;获取某个位置的高度</p>
+<p><code>public bool getPassability(int x, int y)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;获取某个位置的通过性（返回true表示可通过，返回false表示不可通过）</p>
+<p><code>save()</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;保存地图</p>
+<p><code>void initTextures(params string[] textures)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;设置地图使用的贴图，参数为可变长度</p>
+<p><code>void setTexture(int x, int y, string name)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;设置某个位置使用的使用的贴图名字</p>
+<p><code>void seUnPassableAngle(double angle)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;设置最大不可通过角度</p>
+<p><code>void setPassability(int x, int y, bool passible)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;设置某个位置的通过性</p>
+<p><code>bool getPassability(int x, int y)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;获得某个位置的通过性</p>
+<p><code>void setPlayerPos(int playerNum, float x, float y)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;设置玩家出生点位置</p>
+<p><code>void addOreNode(float x, float y, float angle)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;在某位置增加矿脉</p>
+<p><code>void ramp(float x1,float y1, float x2, float y2, float rampWidth)</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 在两点间创建指定宽度的斜坡</p>
+<p><code>void mixTextures()</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;自动混合地表贴图</p>
+<p><code>void updatePassabilityAuto()</code><br>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;自动根据seUnPassableAngle所设置的角度更新整个地图的不可通过性</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/mapcreator/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,qq,qzone,wechat" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/mapcreator/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/mapcreator/2022/04/03/%E7%B2%BE%E5%87%86%E5%8F%82%E6%95%B0%E5%88%B6%E4%BD%9C%E5%9C%B0%E5%9B%BE/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/mapcreator/medias/featureimages/22.jpg" class="responsive-img" alt="精准参数制作地图">
+                        
+                        <span class="card-title">精准参数制作地图</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            物wu
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/mapcreator/2022/04/03/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9C%B0%E5%9B%BE%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/mapcreator/medias/featureimages/7.jpg" class="responsive-img" alt="自定义地图制作教程">
+                        
+                        <span class="card-title">自定义地图制作教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            物wu
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/mapcreator/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/mapcreator/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/mapcreator/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/mapcreator/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/mapcreator/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2022</span>
+            
+            <a href="/mapcreator/about" target="_blank">物wu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/mapcreator/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/mapcreator/libs/materialize/materialize.min.js"></script>
+    <script src="/mapcreator/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/mapcreator/libs/aos/aos.js"></script>
+    <script src="/mapcreator/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/mapcreator/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/mapcreator/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/mapcreator/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/mapcreator/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
